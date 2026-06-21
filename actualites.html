@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actualités IA — Sensibilisation à l&#039;IA</title>
+  <meta name="description" content="Suivez les dernières actualités vérifiées sur l'intelligence artificielle : emploi, santé, environnement, robotique et plus.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.sensibilisation-ia.fr/actualites.html">
+
+  <!-- Open Graph (LinkedIn, Facebook, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sensibilisation à l'IA">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Actualités IA — Sensibilisation à l&#039;IA">
+  <meta property="og:description" content="Suivez les dernières actualités vérifiées sur l&#039;intelligence artificielle : emploi, santé, environnement, robotique et plus.">
+  <meta property="og:url" content="https://www.sensibilisation-ia.fr/actualites.html">
+  <meta property="og:image" content="https://www.sensibilisation-ia.fr/assets/images/og-image.jpg">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Actualités IA — Sensibilisation à l&#039;IA">
+  <meta name="twitter:description" content="Suivez les dernières actualités vérifiées sur l&#039;intelligence artificielle : emploi, santé, environnement, robotique et plus.">
+  <meta name="twitter:image" content="https://www.sensibilisation-ia.fr/assets/images/og-image.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+</head>
+<body>
+
+<!-- ── Navigation ─────────────────────────────────────────── -->
+<nav class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo">
+      <div class="navbar__logo-icon">🧠</div>
+      <div class="navbar__logo-text">
+        Sensibilisation à l'IA
+        <span>Association loi 1901 · Nîmes</span>
+      </div>
+    </a>
+    <ul class="navbar__nav">
+      <li><a href="index.html"          class="nav-link">Accueil</a></li>
+      <li><a href="association.html"    class="nav-link">Association</a></li>
+      <li><a href="etudes.html"         class="nav-link">Études &amp; Rapports</a></li>
+      <li class="nav-item has-dropdown">
+        <a href="#" class="nav-link">Acteurs de l'IA <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="dropdown">
+          <a href="entreprises.html">  <span class="drop-icon">🏢</span> Entreprises IA</a>
+          <a href="universites.html">  <span class="drop-icon">🎓</span> Universités &amp; Recherche</a>
+          <a href="institutions.html"> <span class="drop-icon">🏛️</span> Gouvernements &amp; Institutions</a>
+          <a href="experts.html">      <span class="drop-icon">👤</span> Professionnels &amp; Experts</a>
+        </div>
+      </li>
+      <li><a href="sante-cerveau.html"              class="nav-link">Santé &amp; Cerveau</a></li>
+      <li><a href="environnement-datacenters.html"  class="nav-link">Environnement</a></li>
+      <li><a href="emploi-societe.html"             class="nav-link">Emploi &amp; Société</a></li>
+      <li><a href="robotique.html"                  class="nav-link">Robotique</a></li>
+      <li><a href="actualites.html"                 class="nav-link active">Actualités</a></li>
+      <li><a href="utilisation-responsable.html"    class="nav-link">Usage responsable</a></li>
+      <li><a href="sources.html"                    class="nav-link">Sources</a></li>
+      <li><a href="contact.html"                    class="nav-link btn btn--primary btn--sm" style="border-radius:8px;">Contact</a></li>
+    </ul>
+    <button class="navbar__burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── Menu Mobile ─────────────────────────────────────────── -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html"         class="mobile-nav-link">🏠 Accueil</a>
+  <a href="association.html"   class="mobile-nav-link">ℹ️ Association</a>
+  <a href="etudes.html"        class="mobile-nav-link">📊 Études &amp; Rapports</a>
+  <div class="mobile-nav-group-title">Acteurs de l'IA</div>
+  <a href="entreprises.html"   class="mobile-sub-link">🏢 Entreprises IA</a>
+  <a href="universites.html"   class="mobile-sub-link">🎓 Universités &amp; Recherche</a>
+  <a href="institutions.html"  class="mobile-sub-link">🏛️ Gouvernements &amp; Institutions</a>
+  <a href="experts.html"       class="mobile-sub-link">👤 Professionnels &amp; Experts</a>
+  <a href="sante-cerveau.html"             class="mobile-nav-link">🧠 Santé &amp; Cerveau</a>
+  <a href="environnement-datacenters.html" class="mobile-nav-link">🌱 Environnement</a>
+  <a href="emploi-societe.html"            class="mobile-nav-link">💼 Emploi &amp; Société</a>
+  <a href="robotique.html"                 class="mobile-nav-link">🤖 Évolution Robotique</a>
+  <a href="actualites.html"               class="mobile-nav-link">📰 Actualités IA</a>
+  <a href="utilisation-responsable.html"  class="mobile-nav-link">✅ Usage responsable</a>
+  <a href="bibliotheque.html"             class="mobile-nav-link">📖 Bibliothèque</a>
+  <a href="partenaires.html"              class="mobile-nav-link">🤝 Partenaires</a>
+  <a href="sources.html"                  class="mobile-nav-link">📚 Sources</a>
+  <a href="contact.html"                  class="mobile-nav-link">✉️ Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__badge">📰 Actualités IA</div>
+    <h1 class="page-hero__title">Actualités vérifiées sur l'intelligence artificielle</h1>
+    <p class="page-hero__sub">Suivez l'évolution de l'IA à travers des actualités sélectionnées, analysées et classées par niveau de fiabilité. Toutes les sources sont évaluées selon notre protocole de vérification.</p>
+  </div>
+</section>
+
+<main class="container" style="padding-top:3rem;padding-bottom:4rem;">
+
+  <!-- Info box -->
+  <div class="info-box info-box--blue reveal" style="margin-bottom:2.5rem;">
+    <strong>📋 Protocole de fiabilité :</strong> Chaque actualité est classifiée selon son type de source (institutionnelle, académique, presse spécialisée), la vérifiabilité des données citées et la présence de sources primaires.
+  </div>
+
+  <!-- Recherche et filtres -->
+  <div class="search-filter-bar reveal" style="margin-bottom:2.5rem;">
+    <input type="text" id="searchNews" class="search-bar" placeholder="🔍 Rechercher une actualité, un mot-clé, une source...">
+    <div class="filters" id="filtersNews">
+      <button class="filter-btn active" data-filter="all">Toutes</button>
+      <button class="filter-btn" data-filter="ia-generative">IA générative</button>
+      <button class="filter-btn" data-filter="robotique">Robotique</button>
+      <button class="filter-btn" data-filter="sante">Santé</button>
+      <button class="filter-btn" data-filter="education">Éducation</button>
+      <button class="filter-btn" data-filter="cybersecurite">Cybersécurité</button>
+      <button class="filter-btn" data-filter="gouvernement">Gouvernement</button>
+      <button class="filter-btn" data-filter="environnement">Environnement</button>
+      <button class="filter-btn" data-filter="emploi">Emploi</button>
+      <button class="filter-btn" data-filter="datacenters">Data centers</button>
+      <button class="filter-btn" data-filter="entreprises">Entreprises IA</button>
+      <button class="filter-btn" data-filter="recherche">Recherche</button>
+    </div>
+  </div>
+
+  <!-- Grille d'actualités -->
+  <div class="cards-grid" id="newsGrid" style="grid-template-columns:repeat(auto-fill,minmax(340px,1fr));">
+
+    <article class="news-card reveal" data-category="ia-generative">
+      <div class="news-card__header">
+        <span class="tag tag--blue">IA générative</span>
+        <span class="news-card__date">🗓️ Mars 2026</span>
+      </div>
+      <h3 class="news-card__title">L'Union européenne publie les premiers actes délégués de l'AI Act</h3>
+      <div class="news-card__meta"><span>📰 Presse spécialisée européenne</span> · <span>Type : Réglementation</span></div>
+      <p class="news-card__text">La Commission européenne publie les premiers actes délégués précisant les obligations des fournisseurs de systèmes d'IA à haut risque. Les entreprises disposent d'un délai de mise en conformité de 12 mois.</p>
+      <div class="news-card__details">
+        <div><strong>Enjeu :</strong> Encadrement juridique de l'IA en Europe</div>
+        <div><strong>Impact :</strong> Toutes les entreprises proposant des IA en Europe</div>
+        <div><strong>Risque :</strong> Complexité administrative pour les PME</div>
+      </div>
+      <div class="news-card__footer">
+        <span class="badge badge--green">✅ Fiabilité élevée</span>
+        <a href="https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-intelligence" target="_blank" rel="noopener noreferrer" class="btn-source">Voir la source</a>
+      </div>
+    </article>
+
+    <article class="news-card reveal" data-category="environnement">
+      <div class="news-card__header">
+        <span class="tag tag--green">Environnement</span>
+        <span class="news-card__date">🗓️ Février 2026</span>
+      </div>
+      <h3 class="news-card__title">Consommation électrique des data centers IA : l'AIE alerte sur la pression sur les réseaux</h3>
+      <div class="news-card__meta"><span>🏛️ Agence Internationale de l'Énergie (AIE)</span> · <span>Type : Rapport officiel</span></div>
+      <p class="news-card__text">L'AIE publie son rapport annuel sur la consommation énergétique des data centers. En 2025, les data centers liés à l'IA ont consommé l'équivalent de la production électrique annuelle de plusieurs pays européens.</p>
+      <div class="news-card__details">
+        <div><strong>Enjeu :</strong> Durabilité environnementale de l'IA</div>
+        <div><strong>Impact :</strong> Réseaux électriques nationaux et régionaux</div>
+        <div><strong>Risque :</strong> Tensions sur l'approvisionnement en électricité</div>
+      </div>
+      <div class="news-card__footer">
+        <span class="badge badge--green">✅ Fiabilité élevée</span>
+        <a href="https://www.iea.org/reports/energy-and-ai" target="_blank" rel="noopener noreferrer" class="btn-source">Voir la source</a>
+      </div>
+    </article>
+
+    <article class="news-card reveal" data-category="sante">
+      <div class="news-card__header">
+        <span class="tag" style="background:var(--violet-light);color:var(--violet);">Santé</span>
+        <span class="news-card__date">🗓️ Janvier 2026</span>
+      </div>
+      <h3 class="news-card__title">IA et diagnostic médical : des performances comparables aux médecins spécialistes dans certains domaines</h3>
+      <div class="news-card__meta"><span>🎓 Publication académique (Nature Medicine)</span> · <span>Type : Étude scientifique</span></div>
+      <p class="news-card__text">Une méta-analyse publiée dans Nature Medicine compare les performances des systèmes d'IA en radiologie, dermatologie et ophtalmologie à celles de médecins spécialistes. Les résultats montrent des performances équivalentes sur des tâches de classification, avec des limites importantes sur les cas complexes.</p>
+      <div class="news-card__details">
+        <div><strong>Enjeu :</strong> Place de l'IA dans les diagnostics médicaux</div>
+        <div><strong>Impact :</strong> Médecins, patients, systèmes de santé</div>
+        <div><strong>Risque :</strong> Sur-confiance dans l'IA sur des cas atypiques</div>
+      </div>
+      <div class="news-card__footer">
+        <span class="badge badge--green">✅ Fiabilité élevée</span>
+        <a href="https://www.nature.com/nm/articles?type=research" target="_blank" rel="noopener noreferrer" class="btn-source">Voir la source</a>
+      </div>
+    </article>
+
+    <article class="news-card reveal" data-category="emploi">
+      <div class="news-card__header">
+        <span class="tag tag--orange">Emploi</span>
+        <span class="news-card__date">🗓️ Janvier 2026</span>
+      </div>
+      <h3 class="news-card__title">Le Forum économique mondial publie son rapport sur l'avenir des emplois à l'ère de l'IA</h3>
+      <div class="news-card__meta"><span>🏛️ Forum économique mondial (WEF)</span> · <span>Type : Rapport institutionnel</span></div>
+      <p class="news-card__text">Le WEF estime que d'ici 2030, 170 millions de nouveaux emplois pourraient être créés dans les secteurs technologiques, de l'éducation et des soins, tandis que 92 millions de postes actuels seront profondément transformés par l'automatisation et l'IA.</p>
+      <div class="news-card__details">
+        <div><strong>Enjeu :</strong> Transition professionnelle et requalification</div>
+        <div><strong>Impact :</strong> Salariés, entreprises, gouvernements</div>
+        <div><strong>Risque :</strong> Inégalités si la formation ne suit pas</div>
+      </div>
+      <div class="news-card__footer">
+        <span class="badge badge--green">✅ Fiabilité élevée</span>
+        <a href="https://www.weforum.org/publications/the-future-of-jobs-report-2025/" target="_blank" rel="noopener noreferrer" class="btn-source">Voir la source</a>
+      </div>
+    </article>
+
+    <article class="news-card reveal" data-category="cybersecurite">
+      <div class="news-card__header">
+        <span class="tag" style="background:#fee2e2;color:#dc2626;">Cybersécurité</span>
+        <span class="news-card__date">🗓️ Décembre 2025</span>
+      </div>
+      <h3 class="news-card__title">L'ANSSI met en garde contre l'utilisation de l'IA dans les campagnes de phishing avancées</h3>
+      <div class="news-card__meta"><span>🏛️ ANSSI (Agence nationale de la sécurité des systèmes d'information)</span> · <span>Type : Alerte officielle</span></div>
+      <p class="news-card__text">L'ANSSI constate une augmentation significative des attaques de phishing utilisant des modèles de langage pour générer des messages personnalisés et convaincants. Les entreprises et administrations sont particulièrement ciblées.</p>
+      <div class="news-card__details">
+        <div><strong>Enjeu :</strong> Sécurité numérique des organisations</div>
+        <div><strong>Impact :</strong> Entreprises, administrations, citoyens</div>
+        <div><strong>Risque :</strong> Augmentation des pertes financières liées aux arnaques</div>
+      </div>
+      <div class="news-card__footer">
+        <span class="badge badge--green">✅ Fiabilité élevée</span>
+        <a href="https://cyber.gouv.fr/publications/recommandations-de-securite-pour-un-systeme-dia-generative" target="_blank" rel="noopener noreferrer" class="btn-source">Voir la source</a>
+      </div>
+    </article>
+
+    <article class="news-card reveal" data-category="education">
+      <div class="news-card__header">
+        <span class="tag" style="background:#dbeafe;color:#1d4ed8;">Éducation</span>
+        <span class="news-card__date">🗓️ Novembre 2025</span>
+      </div>
+      <h3 class="news-card__title">L'UNESCO publie des recommandations pour encadrer l'usage de l'IA dans les établissements scolaires</h3>
+      <div class="news-card__meta"><span>🏛️ UNESCO</span> · <span>Type : Recommandations officielles</span></div>
+      <p class="news-card__text">L'UNESCO recommande aux États membres d'interdire l'utilisation des IA génératives avant 13 ans et d'intégrer des cours d'éducation au numérique dès le primaire. Elle insiste sur la nécessité de former les enseignants avant de déployer les outils IA en classe.</p>
+      <div class="news-card__details">
+        <div><strong>Enjeu :</strong> Éducation critique et sécurisée à l'IA</div>
+        <div><strong>Impact :</strong> Élèves, enseignants, ministères de l'Éducation</div>
+        <div><strong>Risque :</strong> Dépendance cognitive si l'IA remplace la réflexion</div>
+      </div>
+      <div class="news-card__footer">
+        <span class="badge badge--green">✅ Fiabilité élevée</span>
+        <a href="https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research" target="_blank" rel="noopener noreferrer" class="btn-source">Voir la source</a>
+      </div>
+    </article>
+
+    <article class="news-card reveal" data-category="robotique">
+      <div class="news-card__header">
+        <span class="tag tag--blue">Robotique</span>
+        <span class="news-card__date">🗓️ Octobre 2025</span>
+      </div>
+      <h3 class="news-card__title">Tesla déploie les premiers robots humanoïdes Optimus dans ses usines de production</h3>
+      <div class="news-card__meta"><span>🏢 Source industrielle spécialisée</span> · <span>Type : Annonce industrielle</span></div>
+      <p class="news-card__text">Tesla annonce le déploiement opérationnel des robots Optimus dans ses lignes de production. Capables d'effectuer des tâches de manutention et d'assemblage, ils sont supervisés par des opérateurs humains dans cette phase initiale.</p>
+      <div class="news-card__details">
+        <div><strong>Enjeu :</strong> Automatisation des chaînes de production</div>
+        <div><strong>Impact :</strong> Ouvriers, industrie automobile mondiale</div>
+        <div><strong>Risque :</strong> Accélération des suppressions de postes</div>
+      </div>
+      <div class="news-card__footer">
+        <span class="badge badge--orange">⚠️ Fiabilité moyenne</span>
+        <a href="https://www.tesla.com/AI" target="_blank" rel="noopener noreferrer" class="btn-source">Voir la source</a>
+      </div>
+    </article>
+
+    <article class="news-card reveal" data-category="gouvernement">
+      <div class="news-card__header">
+        <span class="tag" style="background:#f0fdf4;color:#16a34a;">Gouvernement</span>
+        <span class="news-card__date">🗓️ Septembre 2025</span>
+      </div>
+      <h3 class="news-card__title">Le gouvernement français lance un plan national pour l'intégration de l'IA dans les services publics</h3>
+      <div class="news-card__meta"><span>🏛️ Gouvernement de la République française</span> · <span>Type : Annonce gouvernementale</span></div>
+      <p class="news-card__text">Le gouvernement français annonce un investissement pluriannuel pour déployer des assistants IA dans les services administratifs, améliorer le traitement des demandes citoyennes et moderniser les systèmes d'information des ministères, tout en garantissant la souveraineté numérique nationale.</p>
+      <div class="news-card__details">
+        <div><strong>Enjeu :</strong> Modernisation de l'État et souveraineté numérique</div>
+        <div><strong>Impact :</strong> Citoyens, agents publics, administrations</div>
+        <div><strong>Risque :</strong> Protection des données personnelles des citoyens</div>
+      </div>
+      <div class="news-card__footer">
+        <span class="badge badge--green">✅ Fiabilité élevée</span>
+        <a href="https://www.gouvernement.fr/strategie-nationale-pour-l-intelligence-artificielle" target="_blank" rel="noopener noreferrer" class="btn-source">Voir la source</a>
+      </div>
+    </article>
+
+    <article class="news-card reveal" data-category="ia-generative">
+      <div class="news-card__header">
+        <span class="tag tag--blue">IA générative</span>
+        <span class="news-card__date">🗓️ Août 2025</span>
+      </div>
+      <h3 class="news-card__title">Publication d'une étude sur les hallucinations dans les grands modèles de langage</h3>
+      <div class="news-card__meta"><span>🎓 Publication universitaire (MIT &amp; Stanford)</span> · <span>Type : Étude scientifique</span></div>
+      <p class="news-card__text">Une étude collaborative de chercheurs du MIT et de Stanford analyse la fréquence et la nature des hallucinations dans les modèles GPT-4, Claude et Gemini. Les résultats montrent que les hallucinations persistent malgré les progrès récents, particulièrement sur des sujets spécialisés peu représentés dans les données d'entraînement.</p>
+      <div class="news-card__details">
+        <div><strong>Enjeu :</strong> Fiabilité des IA pour des usages professionnels</div>
+        <div><strong>Impact :</strong> Entreprises, professionnels de santé, juristes</div>
+        <div><strong>Risque :</strong> Prises de décision basées sur des informations fausses</div>
+      </div>
+      <div class="news-card__footer">
+        <span class="badge badge--green">✅ Fiabilité élevée</span>
+        <a href="https://hai.stanford.edu/news/ai-index-2025-state-of-ai-in-10-charts" target="_blank" rel="noopener noreferrer" class="btn-source">Voir la source</a>
+      </div>
+    </article>
+
+    <article class="news-card reveal" data-category="datacenters">
+      <div class="news-card__header">
+        <span class="tag tag--green">Data centers</span>
+        <span class="news-card__date">🗓️ Juillet 2025</span>
+      </div>
+      <h3 class="news-card__title">Projet de data center contesté aux États-Unis : les habitants dénoncent la consommation d'eau</h3>
+      <div class="news-card__meta"><span>📰 Presse environnementale spécialisée</span> · <span>Type : Analyse journalistique</span></div>
+      <p class="news-card__text">Dans plusieurs États américains, des projets d'implantation de data centers géants suscitent des oppositions locales. Les riverains dénoncent la consommation d'eau dans des zones en stress hydrique, l'impact sur le réseau électrique et le faible nombre d'emplois durables créés pour les habitants.</p>
+      <div class="news-card__details">
+        <div><strong>Enjeu :</strong> Impact territorial des infrastructures numériques</div>
+        <div><strong>Impact :</strong> Communautés locales, ressources naturelles</div>
+        <div><strong>Risque :</strong> Tensions sociales et déficit démocratique</div>
+      </div>
+      <div class="news-card__footer">
+        <span class="badge badge--orange">⚠️ Fiabilité moyenne</span>
+        <a href="https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/" target="_blank" rel="noopener noreferrer" class="btn-source">Voir la source</a>
+      </div>
+    </article>
+
+    <article class="news-card reveal" data-category="recherche">
+      <div class="news-card__header">
+        <span class="tag" style="background:#ede9fe;color:#7c3aed;">Recherche</span>
+        <span class="news-card__date">🗓️ Juin 2025</span>
+      </div>
+      <h3 class="news-card__title">Inria publie un rapport sur la souveraineté algorithmique européenne</h3>
+      <div class="news-card__meta"><span>🏛️ Inria (Institut national de recherche en sciences du numérique)</span> · <span>Type : Rapport de recherche</span></div>
+      <p class="news-card__text">Inria publie un rapport approfondi sur la capacité de l'Europe à développer des IA souveraines. Le rapport analyse les écosystèmes académiques, industriels et réglementaires, et propose des recommandations pour réduire la dépendance aux acteurs américains et chinois.</p>
+      <div class="news-card__details">
+        <div><strong>Enjeu :</strong> Souveraineté numérique et compétitivité européenne</div>
+        <div><strong>Impact :</strong> Gouvernements, entreprises, chercheurs européens</div>
+        <div><strong>Risque :</strong> Retard structurel face aux géants américains et chinois</div>
+      </div>
+      <div class="news-card__footer">
+        <span class="badge badge--green">✅ Fiabilité élevée</span>
+        <a href="https://www.inria.fr/fr/intelligence-artificielle" target="_blank" rel="noopener noreferrer" class="btn-source">Voir la source</a>
+      </div>
+    </article>
+
+    <article class="news-card reveal" data-category="entreprises">
+      <div class="news-card__header">
+        <span class="tag tag--blue">Entreprises IA</span>
+        <span class="news-card__date">🗓️ Mai 2025</span>
+      </div>
+      <h3 class="news-card__title">Mistral AI annonce un modèle multimodal optimisé pour les entreprises européennes</h3>
+      <div class="news-card__meta"><span>🏢 Communiqué officiel Mistral AI</span> · <span>Type : Annonce industrielle</span></div>
+      <p class="news-card__text">La startup française Mistral AI annonce la sortie d'un modèle multimodal destiné aux entreprises européennes, avec hébergement sur des serveurs européens et conformité RGPD native. Ce modèle traite texte, images et documents structurés dans plusieurs langues européennes.</p>
+      <div class="news-card__details">
+        <div><strong>Enjeu :</strong> Alternatives européennes aux IA américaines</div>
+        <div><strong>Impact :</strong> Entreprises cherchant des solutions conformes RGPD</div>
+        <div><strong>Risque :</strong> Capacités encore inférieures aux plus grands modèles</div>
+      </div>
+      <div class="news-card__footer">
+        <span class="badge badge--green">✅ Fiabilité élevée</span>
+        <a href="https://mistral.ai/" target="_blank" rel="noopener noreferrer" class="btn-source">Voir la source</a>
+      </div>
+    </article>
+
+  </div><!-- #newsGrid -->
+
+  <!-- Message si aucun résultat -->
+  <div id="noResults" style="display:none;text-align:center;padding:3rem;">
+    <p style="font-size:1.1rem;color:var(--gray-600);">Aucune actualité ne correspond à votre recherche. Essayez un autre mot-clé ou une autre catégorie.</p>
+  </div>
+
+  <section class="section section--alt" style="margin-top:3rem;">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:2.5rem;" class="reveal">
+        <div class="section-eyebrow" style="justify-content:center;">📰 Actualités vérifiées — presse internationale</div>
+        <h2 class="section-title">Articles authentiques sur <span>l'actualité de l'IA</span></h2>
+        <p class="section-lead" style="margin:0 auto;">Sélection d'articles récents issus de médias internationaux. Tous les liens pointent directement vers la publication d'origine.</p>
+      </div>
+      <div class="grid-3">
+
+        <article class="press-card reveal">
+          <div class="press-card__top"><span class="press-card__source">Représentation UE en France</span><span class="press-card__country">🇪🇺 Europe</span></div>
+          <div class="press-card__date">Février 2025</div>
+          <h3 class="press-card__title">Les premières règles de l'AI Act sont applicables</h3>
+          <p class="press-card__excerpt">Entrée en vigueur des premières interdictions de l'AI Act européen : scoring social, biométrie de masse, exploitation des vulnérabilités.</p>
+          <a class="press-card__link" href="https://france.representation.ec.europa.eu/informations/intelligence-artificielle-les-premieres-regles-de-la-legislation-de-lue-sont-desormais-applicables-2025-02-03_fr" target="_blank" rel="noopener noreferrer">Lire l'annonce officielle →</a>
+        </article>
+
+        <article class="press-card reveal reveal-delay-1">
+          <div class="press-card__top"><span class="press-card__source">CNBC</span><span class="press-card__country">🇺🇸 USA</span></div>
+          <div class="press-card__date">Avril 2026</div>
+          <h3 class="press-card__title">DeepSeek releases preview of long-awaited V4 model as AI race intensifies</h3>
+          <p class="press-card__excerpt">DeepSeek dévoile la version V4 de son modèle ouvert : la course IA Chine-USA s'accélère, après le « moment Sputnik » de R1.</p>
+          <a class="press-card__link" href="https://www.cnbc.com/2026/04/24/deepseek-v4-llm-preview-open-source-ai-competition-china.html" target="_blank" rel="noopener noreferrer">Lire sur CNBC →</a>
+        </article>
+
+        <article class="press-card reveal reveal-delay-2">
+          <div class="press-card__top"><span class="press-card__source">CNN Business</span><span class="press-card__country">🇺🇸 USA</span></div>
+          <div class="press-card__date">Avril 2026</div>
+          <h3 class="press-card__title">China's AI upstart DeepSeek drops new model</h3>
+          <p class="press-card__excerpt">Couverture CNN du nouveau modèle DeepSeek : un défi géopolitique majeur pour la suprématie IA américaine.</p>
+          <a class="press-card__link" href="https://www.cnn.com/2026/04/24/tech/chinas-ai-deepseek-v4-intl-hnk" target="_blank" rel="noopener noreferrer">Lire sur CNN →</a>
+        </article>
+
+        <article class="press-card reveal">
+          <div class="press-card__top"><span class="press-card__source">Bloomberg</span><span class="press-card__country">🇺🇸 USA</span></div>
+          <div class="press-card__date">Avril 2026</div>
+          <h3 class="press-card__title">DeepSeek Unveils Flagship AI Model a Year After Breakthrough</h3>
+          <p class="press-card__excerpt">Analyse économique Bloomberg de l'impact marché de la nouvelle vague DeepSeek (paywall partiel).</p>
+          <a class="press-card__link" href="https://www.bloomberg.com/news/articles/2026-04-24/deepseek-unveils-newest-flagship-a-year-after-ai-breakthrough" target="_blank" rel="noopener noreferrer">Lire sur Bloomberg →</a>
+        </article>
+
+        <article class="press-card reveal reveal-delay-1">
+          <div class="press-card__top"><span class="press-card__source">Euronews</span><span class="press-card__country">🇪🇺 Europe</span></div>
+          <div class="press-card__date">Avril 2026</div>
+          <h3 class="press-card__title">DeepSeek releases new AI model V4 — everything to know</h3>
+          <p class="press-card__excerpt">Couverture européenne du modèle V4 de DeepSeek et de ses implications pour la stratégie IA continentale.</p>
+          <a class="press-card__link" href="https://www.euronews.com/next/2026/04/24/chinas-deepseek-releases-new-ai-model-v4-heres-everything-to-know-as-the-ai-race-speeds-up" target="_blank" rel="noopener noreferrer">Lire sur Euronews →</a>
+        </article>
+
+        <article class="press-card reveal reveal-delay-2">
+          <div class="press-card__top"><span class="press-card__source">MIT Technology Review</span><span class="press-card__country">🇺🇸 USA</span></div>
+          <div class="press-card__date">Janvier 2025</div>
+          <h3 class="press-card__title">How DeepSeek released a top AI reasoning model despite US sanctions</h3>
+          <p class="press-card__excerpt">Enquête approfondie de MIT Tech Review sur les conditions du « moment DeepSeek » — efficacité, sanctions, open source.</p>
+          <a class="press-card__link" href="https://www.technologyreview.com/2025/01/24/1110526/china-deepseek-top-ai-despite-sanctions/" target="_blank" rel="noopener noreferrer">Lire sur MIT Tech Review →</a>
+        </article>
+
+        <article class="press-card reveal">
+          <div class="press-card__top"><span class="press-card__source">U.S. News</span><span class="press-card__country">🇺🇸 USA</span></div>
+          <div class="press-card__date">Avril 2026</div>
+          <h3 class="press-card__title">China's DeepSeek Rolls Out a Long-Anticipated Update of Its AI Model</h3>
+          <p class="press-card__excerpt">Reprise de la dépêche d'agence (AP) sur la sortie de DeepSeek V4 et son impact géopolitique.</p>
+          <a class="press-card__link" href="https://www.usnews.com/news/business/articles/2026-04-24/chinas-deepseek-rolls-out-a-long-anticipated-update-of-its-ai-model" target="_blank" rel="noopener noreferrer">Lire sur U.S. News →</a>
+        </article>
+
+        <article class="press-card reveal reveal-delay-1">
+          <div class="press-card__top"><span class="press-card__source">Stanford HAI</span><span class="press-card__country">🇺🇸 USA</span></div>
+          <div class="press-card__date">Avril 2025</div>
+          <h3 class="press-card__title">AI Index 2025: State of AI in 10 Charts</h3>
+          <p class="press-card__excerpt">Stanford HAI résume en 10 graphiques l'état mondial de l'IA en 2025 : adoption, financement, incidents, régulation.</p>
+          <a class="press-card__link" href="https://hai.stanford.edu/news/ai-index-2025-state-of-ai-in-10-charts" target="_blank" rel="noopener noreferrer">Lire sur Stanford HAI →</a>
+        </article>
+
+        <article class="press-card reveal reveal-delay-2">
+          <div class="press-card__top"><span class="press-card__source">World Economic Forum</span><span class="press-card__country">🌍 International</span></div>
+          <div class="press-card__date">Février 2025</div>
+          <h3 class="press-card__title">DeepSeek shakes up AI sector — and other digital tech stories</h3>
+          <p class="press-card__excerpt">Synthèse WEF du « moment DeepSeek » — souveraineté, valorisation des géants tech, marchés financiers.</p>
+          <a class="press-card__link" href="https://www.weforum.org/stories/2025/02/china-deepseek-shakes-up-ai-tech-stories/" target="_blank" rel="noopener noreferrer">Lire sur WEF →</a>
+        </article>
+
+        <article class="press-card reveal">
+          <div class="press-card__top"><span class="press-card__source">Touteleurope.eu</span><span class="press-card__country">🇫🇷 France</span></div>
+          <div class="press-card__date">2025</div>
+          <h3 class="press-card__title">Intelligence artificielle : que fait l'Union européenne ?</h3>
+          <p class="press-card__excerpt">Décryptage des actions et stratégies de l'UE en matière d'IA : AI Act, AI Office, sommets internationaux.</p>
+          <a class="press-card__link" href="https://www.touteleurope.eu/economie-et-social/intelligence-artificielle-que-fait-l-union-europeenne/" target="_blank" rel="noopener noreferrer">Lire sur touteleurope.eu →</a>
+        </article>
+
+        <article class="press-card reveal reveal-delay-1">
+          <div class="press-card__top"><span class="press-card__source">Parlement européen</span><span class="press-card__country">🇪🇺 Europe</span></div>
+          <div class="press-card__date">2025</div>
+          <h3 class="press-card__title">Loi sur l'IA de l'UE : première réglementation mondiale de l'IA</h3>
+          <p class="press-card__excerpt">Présentation officielle du Parlement européen sur l'AI Act et son entrée en application progressive 2025-2027.</p>
+          <a class="press-card__link" href="https://www.europarl.europa.eu/topics/fr/article/20230601STO93804/loi-sur-l-ia-de-l-ue-premiere-reglementation-de-l-intelligence-artificielle" target="_blank" rel="noopener noreferrer">Lire sur europarl.europa.eu →</a>
+        </article>
+
+        <article class="press-card reveal reveal-delay-2">
+          <div class="press-card__top"><span class="press-card__source">Computerworld</span><span class="press-card__country">🇺🇸 USA</span></div>
+          <div class="press-card__date">2026</div>
+          <h3 class="press-card__title">DeepSeek's new method can train AI more efficiently and cheaply</h3>
+          <p class="press-card__excerpt">Détail technique des innovations d'entraînement de DeepSeek qui font baisser les coûts d'un ordre de grandeur.</p>
+          <a class="press-card__link" href="https://www.computerworld.com/article/4112384/deepseeks-new-method-can-train-ai-more-efficiently-and-cheaply.html" target="_blank" rel="noopener noreferrer">Lire sur Computerworld →</a>
+        </article>
+
+      </div>
+      <div style="text-align:center;margin-top:2rem;font-size:0.85rem;color:#8899BB;">
+        <p>Liens vérifiés en mai 2026. Les articles demeurent la propriété de leurs éditeurs respectifs. Certaines sources peuvent être soumises à un paywall.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── Footer ────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo" style="display:inline-flex;margin-bottom:0.5rem;">
+          <div class="navbar__logo-icon">🧠</div>
+          <div class="navbar__logo-text">Sensibilisation à l'IA<span>Association loi 1901</span></div>
+        </a>
+        <p>Plateforme indépendante de veille, d'analyse et de sensibilisation aux enjeux de l'intelligence artificielle. Fondée à Nîmes en 2026.</p>
+        <div class="social-links" style="margin-top:1.25rem;">
+          <a href="https://www.linkedin.com/in/ihab-benmahrouz-27a991337/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">💼</a>
+          <a href="https://github.com/IhabBenmahrouz" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">⌨️</a>
+          <a href="https://www.instagram.com/ihabbenmahrouz/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">📷</a>
+          <a href="https://x.com/IhaBenmahrouz17" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter/X">✖️</a>
+          <a href="https://www.facebook.com/profile.php?id=61589297452883" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">👥</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Thématiques</div>
+        <div class="footer__links">
+          <a href="etudes.html">Études &amp; Rapports</a>
+          <a href="bibliotheque.html">Bibliothèque IA</a>
+          <a href="sante-cerveau.html">Santé &amp; Cerveau</a>
+          <a href="environnement-datacenters.html">Environnement</a>
+          <a href="emploi-societe.html">Emploi &amp; Société</a>
+          <a href="robotique.html">Évolution Robotique</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Acteurs</div>
+        <div class="footer__links">
+          <a href="entreprises.html">Entreprises IA</a>
+          <a href="universites.html">Universités</a>
+          <a href="institutions.html">Gouvernements</a>
+          <a href="experts.html">Experts</a>
+          <a href="partenaires.html">Partenaires</a>
+          <a href="actualites.html">Actualités IA</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Ressources</div>
+        <div class="footer__links">
+          <a href="utilisation-responsable.html">Usage responsable</a>
+          <a href="sources.html">Bibliothèque de sources</a>
+          <a href="association.html">Notre association</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Contact</div>
+        <div class="footer__links">
+          <a href="contact.html">Formulaire de contact</a>
+          <a href="contact.html#partenariat">Partenariat</a>
+          <a href="contact.html#rejoindre">Adhésion</a>
+        </div>
+        <p style="font-size:0.8rem;color:var(--gray-600);margin-top:1rem;">
+          📍 Nîmes (30000), Gard<br>
+          📋 N° W302023332
+        </p>
+      </div>
+    </div>
+    <div class="footer__legal-row">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="politique-confidentialite.html">Politique de confidentialité</a>
+      <a href="politique-cookies.html">Politique cookies</a>
+      <button type="button" data-cookie-action="open-preferences">Gérer les cookies</button>
+      <a href="cgu.html">Conditions d'utilisation</a>
+      <a href="accessibilite.html">Accessibilité</a>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Association Sensibilisation à l'IA — Tous droits réservés · Loi du 1<sup>er</sup> juillet 1901</p>
+      <div class="footer__badges">
+        <span class="tag">RGPD conforme</span>
+        <span class="tag tag--green">Sources vérifiées</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Retour en haut ─────────────────────────────────────────── -->
+<button class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</button>
+
+<script src="js/script.js"></script>
+<script src="js/cookies.js"></script>
+<script src="js/enhancements.js"></script>
+</body>
+</html>

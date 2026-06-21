@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Évolution Robotique — Sensibilisation à l&#039;IA</title>
+  <meta name="description" content="Découvrez comment l'IA transforme la robotique industrielle, médicale, humanoïde et agricole.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.sensibilisation-ia.fr/robotique.html">
+
+  <!-- Open Graph (LinkedIn, Facebook, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sensibilisation à l'IA">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Évolution Robotique — Sensibilisation à l&#039;IA">
+  <meta property="og:description" content="Découvrez comment l&#039;IA transforme la robotique industrielle, médicale, humanoïde et agricole.">
+  <meta property="og:url" content="https://www.sensibilisation-ia.fr/robotique.html">
+  <meta property="og:image" content="https://www.sensibilisation-ia.fr/assets/images/og-image.jpg">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Évolution Robotique — Sensibilisation à l&#039;IA">
+  <meta name="twitter:description" content="Découvrez comment l&#039;IA transforme la robotique industrielle, médicale, humanoïde et agricole.">
+  <meta name="twitter:image" content="https://www.sensibilisation-ia.fr/assets/images/og-image.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+</head>
+<body>
+
+<!-- ── Navigation ─────────────────────────────────────────── -->
+<nav class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo">
+      <div class="navbar__logo-icon">🧠</div>
+      <div class="navbar__logo-text">
+        Sensibilisation à l'IA
+        <span>Association loi 1901 · Nîmes</span>
+      </div>
+    </a>
+    <ul class="navbar__nav">
+      <li><a href="index.html"          class="nav-link">Accueil</a></li>
+      <li><a href="association.html"    class="nav-link">Association</a></li>
+      <li><a href="etudes.html"         class="nav-link">Études &amp; Rapports</a></li>
+      <li class="nav-item has-dropdown">
+        <a href="#" class="nav-link">Acteurs de l'IA <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="dropdown">
+          <a href="entreprises.html">  <span class="drop-icon">🏢</span> Entreprises IA</a>
+          <a href="universites.html">  <span class="drop-icon">🎓</span> Universités &amp; Recherche</a>
+          <a href="institutions.html"> <span class="drop-icon">🏛️</span> Gouvernements &amp; Institutions</a>
+          <a href="experts.html">      <span class="drop-icon">👤</span> Professionnels &amp; Experts</a>
+        </div>
+      </li>
+      <li><a href="sante-cerveau.html"              class="nav-link">Santé &amp; Cerveau</a></li>
+      <li><a href="environnement-datacenters.html"  class="nav-link">Environnement</a></li>
+      <li><a href="emploi-societe.html"             class="nav-link">Emploi &amp; Société</a></li>
+      <li><a href="robotique.html"                  class="nav-link active">Robotique</a></li>
+      <li><a href="actualites.html"                 class="nav-link">Actualités</a></li>
+      <li><a href="utilisation-responsable.html"    class="nav-link">Usage responsable</a></li>
+      <li><a href="sources.html"                    class="nav-link">Sources</a></li>
+      <li><a href="contact.html"                    class="nav-link btn btn--primary btn--sm" style="border-radius:8px;">Contact</a></li>
+    </ul>
+    <button class="navbar__burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── Menu Mobile ─────────────────────────────────────────── -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html"         class="mobile-nav-link">🏠 Accueil</a>
+  <a href="association.html"   class="mobile-nav-link">ℹ️ Association</a>
+  <a href="etudes.html"        class="mobile-nav-link">📊 Études &amp; Rapports</a>
+  <div class="mobile-nav-group-title">Acteurs de l'IA</div>
+  <a href="entreprises.html"   class="mobile-sub-link">🏢 Entreprises IA</a>
+  <a href="universites.html"   class="mobile-sub-link">🎓 Universités &amp; Recherche</a>
+  <a href="institutions.html"  class="mobile-sub-link">🏛️ Gouvernements &amp; Institutions</a>
+  <a href="experts.html"       class="mobile-sub-link">👤 Professionnels &amp; Experts</a>
+  <a href="sante-cerveau.html"             class="mobile-nav-link">🧠 Santé &amp; Cerveau</a>
+  <a href="environnement-datacenters.html" class="mobile-nav-link">🌱 Environnement</a>
+  <a href="emploi-societe.html"            class="mobile-nav-link">💼 Emploi &amp; Société</a>
+  <a href="robotique.html"                 class="mobile-nav-link">🤖 Évolution Robotique</a>
+  <a href="actualites.html"               class="mobile-nav-link">📰 Actualités IA</a>
+  <a href="utilisation-responsable.html"  class="mobile-nav-link">✅ Usage responsable</a>
+  <a href="bibliotheque.html"             class="mobile-nav-link">📖 Bibliothèque</a>
+  <a href="partenaires.html"              class="mobile-nav-link">🤝 Partenaires</a>
+  <a href="sources.html"                  class="mobile-nav-link">📚 Sources</a>
+  <a href="contact.html"                  class="mobile-nav-link">✉️ Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__badge">🤖 Évolution Robotique</div>
+    <h1 class="page-hero__title">La robotique à l'ère de l'intelligence artificielle</h1>
+    <p class="page-hero__sub">La robotique moderne ne repose plus uniquement sur la mécanique. Elle intègre l'IA, les capteurs, la vision artificielle et le cloud pour créer des machines capables d'apprendre, d'adapter et d'interagir.</p>
+  </div>
+</section>
+
+<main class="container" style="padding-top:3rem;padding-bottom:4rem;">
+
+  <!-- Introduction -->
+  <section class="reveal" style="margin-bottom:4rem;">
+    <div class="info-box info-box--blue" style="max-width:800px;margin:0 auto;">
+      <strong>Message central :</strong> La robotique contemporaine est indissociable de l'IA. Les robots modernes perçoivent leur environnement grâce à des capteurs, prennent des décisions via des algorithmes d'apprentissage automatique, et s'améliorent en continu grâce aux données collectées.
+    </div>
+  </section>
+
+  <!-- Frise chronologique -->
+  <section class="reveal" style="margin-bottom:4rem;">
+    <h2 class="section-title">Frise chronologique : 70 ans d'évolution robotique</h2>
+    <div class="timeline">
+      <div class="timeline__item">
+        <div class="timeline__year">1954</div>
+        <div class="timeline__content">
+          <strong>Unimate — Premier robot industriel</strong>
+          <p>Installé chez General Motors, Unimate est le premier bras robotique programmable. Il effectue des tâches répétitives sur une chaîne d'assemblage, sans aucune intelligence artificielle.</p>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__year">1969</div>
+        <div class="timeline__content">
+          <strong>Shakey — Premier robot mobile autonome</strong>
+          <p>Développé par le Stanford Research Institute, Shakey est capable de percevoir son environnement, de raisonner et de planifier ses déplacements. Il marque les débuts de l'IA robotique.</p>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__year">1997</div>
+        <div class="timeline__content">
+          <strong>Sojourner — Robot sur Mars</strong>
+          <p>La NASA envoie son premier rover sur Mars. Sojourner navigue de manière semi-autonome sur le sol martien, ouvrant la voie à l'exploration robotique spatiale.</p>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__year">2000</div>
+        <div class="timeline__content">
+          <strong>ASIMO — Robot humanoïde de Honda</strong>
+          <p>ASIMO marche de manière bipède, monte des escaliers et interagit avec les humains. Il devient un symbole de la robotique humanoïde et inspire des décennies de recherche.</p>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__year">2011</div>
+        <div class="timeline__content">
+          <strong>Robots collaboratifs (cobots)</strong>
+          <p>Universal Robots popularise les cobots, des robots conçus pour travailler directement aux côtés des humains sans cage de sécurité, grâce à des capteurs de force avancés.</p>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__year">2016</div>
+        <div class="timeline__content">
+          <strong>AlphaGo &amp; apprentissage par renforcement</strong>
+          <p>DeepMind démontre que les algorithmes d'apprentissage par renforcement peuvent maîtriser des tâches complexes. Cette technologie est désormais au cœur de nombreux systèmes robotiques.</p>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__year">2020</div>
+        <div class="timeline__content">
+          <strong>Boston Dynamics — Atlas danse</strong>
+          <p>Atlas réalise des figures acrobatiques complexes avec une fluidité stupéfiante, démontrant la maturité des algorithmes de contrôle dynamique et d'équilibrage en temps réel.</p>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__year">2023–2026</div>
+        <div class="timeline__content">
+          <strong>Humanoïdes commerciaux &amp; IA générative</strong>
+          <p>Figure AI, Tesla Optimus et 1X Technologies lancent des robots humanoïdes destinés aux environnements industriels. L'IA générative permet aux robots de comprendre des instructions en langage naturel.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Domaines d'application -->
+  <section class="reveal" style="margin-bottom:4rem;">
+    <h2 class="section-title">Domaines d'application de la robotique IA</h2>
+    <div class="cards-grid">
+
+      <div class="card reveal">
+        <div class="card__icon">🏭</div>
+        <h3 class="card__title">Robotique industrielle</h3>
+        <p class="card__text">Les bras robotiques pilotés par IA assemblent, soudent, peignent et contrôlent la qualité avec une précision submillimétrique. L'IA permet l'adaptation en temps réel aux variations de production.</p>
+        <div class="card__tags"><span class="tag">Automobile</span><span class="tag">Électronique</span><span class="tag">Logistique</span></div>
+        <div class="badge badge--green">Maturité élevée</div>
+      </div>
+
+      <div class="card reveal">
+        <div class="card__icon">🧑‍🦯</div>
+        <h3 class="card__title">Robots humanoïdes</h3>
+        <p class="card__text">Des robots à forme humaine comme Tesla Optimus, Figure 02 ou Digit sont conçus pour opérer dans des environnements prévus pour les humains : entrepôts, usines, maisons de retraite.</p>
+        <div class="card__tags"><span class="tag">Travail physique</span><span class="tag">Assistance</span></div>
+        <div class="badge badge--orange">En développement actif</div>
+      </div>
+
+      <div class="card reveal">
+        <div class="card__icon">🏥</div>
+        <h3 class="card__title">Robotique médicale</h3>
+        <p class="card__text">Le robot Da Vinci réalise des chirurgies mini-invasives avec une précision millimétrique. Des robots de rééducation assistent les patients après un AVC. L'IA analyse les images médicales en temps réel.</p>
+        <div class="card__tags"><span class="tag">Chirurgie</span><span class="tag">Rééducation</span><span class="tag">Diagnostic</span></div>
+        <div class="badge badge--green">Déployé à grande échelle</div>
+      </div>
+
+      <div class="card reveal">
+        <div class="card__icon">🌾</div>
+        <h3 class="card__title">Robotique agricole</h3>
+        <p class="card__text">Des robots autonomes pulvérisent les cultures avec précision, cueillent les fruits fragiles, analysent la santé des plantes par vision artificielle et guident des tracteurs sans conducteur.</p>
+        <div class="card__tags"><span class="tag">Agriculture de précision</span><span class="tag">Récolte</span></div>
+        <div class="badge badge--orange">En déploiement</div>
+      </div>
+
+      <div class="card reveal">
+        <div class="card__icon">🛡️</div>
+        <h3 class="card__title">Robotique militaire &amp; de sécurité</h3>
+        <p class="card__text">Des drones autonomes, des robots démineurs et des véhicules sans pilote sont utilisés pour des missions dangereuses. Leur développement soulève des questions éthiques majeures.</p>
+        <div class="card__tags"><span class="tag">Drones</span><span class="tag">Surveillance</span><span class="tag">Déminage</span></div>
+        <div class="badge badge--red">⚠️ Questions éthiques</div>
+      </div>
+
+      <div class="card reveal">
+        <div class="card__icon">🏠</div>
+        <h3 class="card__title">Robots domestiques</h3>
+        <p class="card__text">Aspirateurs autonomes, tondeuses connectées, assistants vocaux embarqués dans des formes physiques. Ces robots apprennent les habitudes des foyers et s'y adaptent progressivement.</p>
+        <div class="card__tags"><span class="tag">Maison connectée</span><span class="tag">Assistance quotidienne</span></div>
+        <div class="badge badge--green">Grand public</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Acteurs majeurs -->
+  <section class="reveal" style="margin-bottom:4rem;">
+    <h2 class="section-title">Acteurs majeurs de la robotique IA</h2>
+    <div class="cards-grid" style="grid-template-columns:repeat(auto-fill,minmax(300px,1fr));">
+      <div class="card card--compact reveal">
+        <div class="card__icon">🐕</div>
+        <h3 class="card__title">Boston Dynamics</h3>
+        <p class="card__text">Leader mondial des robots à locomotion dynamique. Spot (quadrupède) et Atlas (humanoïde) repoussent les limites du mouvement robotique autonome.</p>
+      </div>
+      <div class="card card--compact reveal">
+        <div class="card__icon">🚗</div>
+        <h3 class="card__title">Tesla (Optimus)</h3>
+        <p class="card__text">Robot humanoïde conçu pour les usines Tesla, piloté par les mêmes systèmes d'IA que les véhicules autonomes. Objectif d'1 million d'unités d'ici 2030 annoncé par Tesla.</p>
+      </div>
+      <div class="card card--compact reveal">
+        <div class="card__icon">🔬</div>
+        <h3 class="card__title">Figure AI</h3>
+        <p class="card__text">Startup américaine de robotique humanoïde, développe Figure 02 et son propre modèle d'IA maison (Helix) pour le raisonnement en langage naturel, après la fin de son partenariat avec OpenAI début 2025.</p>
+      </div>
+      <div class="card card--compact reveal">
+        <div class="card__icon">🏥</div>
+        <h3 class="card__title">Intuitive Surgical</h3>
+        <p class="card__text">Fabricant du robot Da Vinci, utilisé dans des millions de chirurgies dans le monde. Pionnier de la robotique médicale assistée par IA.</p>
+      </div>
+      <div class="card card--compact reveal">
+        <div class="card__icon">🤝</div>
+        <h3 class="card__title">Universal Robots</h3>
+        <p class="card__text">Leader mondial des bras collaboratifs (cobots). Ses robots travaillent aux côtés des opérateurs humains dans les PME et les grandes industries.</p>
+      </div>
+      <div class="card card--compact reveal">
+        <div class="card__icon">🛸</div>
+        <h3 class="card__title">DJI &amp; Skydio</h3>
+        <p class="card__text">Fabricants de drones autonomes utilisés dans l'agriculture, l'inspection d'infrastructures, la cartographie et la sécurité civile.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technologies clés -->
+  <section class="reveal" style="margin-bottom:4rem;">
+    <h2 class="section-title">Technologies clés qui transforment la robotique</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem;">
+      <div class="card card--compact reveal">
+        <strong>👁️ Vision par ordinateur</strong>
+        <p style="margin-top:.5rem;font-size:.9rem;">Les robots perçoivent leur environnement en 3D, identifient des objets, des visages et des obstacles grâce à des réseaux de neurones convolutifs.</p>
+      </div>
+      <div class="card card--compact reveal">
+        <strong>🧠 Apprentissage par renforcement</strong>
+        <p style="margin-top:.5rem;font-size:.9rem;">Le robot apprend par essais et erreurs dans un environnement simulé, puis transfère ses compétences dans le monde réel (sim-to-real transfer).</p>
+      </div>
+      <div class="card card--compact reveal">
+        <strong>📡 Capteurs LiDAR &amp; IMU</strong>
+        <p style="margin-top:.5rem;font-size:.9rem;">Les capteurs LiDAR cartographient l'environnement en temps réel. Les IMU mesurent l'orientation et l'accélération pour maintenir l'équilibre dynamique.</p>
+      </div>
+      <div class="card card--compact reveal">
+        <strong>☁️ IA embarquée &amp; Edge computing</strong>
+        <p style="margin-top:.5rem;font-size:.9rem;">Les robots traitent une partie des données localement (edge) pour des décisions en temps réel, tout en se synchronisant avec le cloud pour l'apprentissage.</p>
+      </div>
+      <div class="card card--compact reveal">
+        <strong>🗣️ Traitement du langage naturel</strong>
+        <p style="margin-top:.5rem;font-size:.9rem;">Les robots modernes comprennent et génèrent du langage humain, permettant une interaction intuitive sans interface graphique ni programmation.</p>
+      </div>
+      <div class="card card--compact reveal">
+        <strong>🤜 Contrôle haptique &amp; de force</strong>
+        <p style="margin-top:.5rem;font-size:.9rem;">Les robots dotés de capteurs de force peuvent manipuler des objets fragiles, effectuer des gestes chirurgicaux et collaborer en toute sécurité avec les humains.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Opportunités et Risques -->
+  <section class="reveal" style="margin-bottom:4rem;">
+    <h2 class="section-title">Opportunités &amp; Risques</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;">
+      <div class="card reveal" style="border-top:4px solid var(--cyan);">
+        <h3 style="color:var(--cyan);margin-bottom:1rem;">✅ Opportunités</h3>
+        <ul style="list-style:none;padding:0;">
+          <li style="padding:.5rem 0;border-bottom:1px solid var(--gray-200);">🏭 Automatisation des tâches dangereuses et pénibles</li>
+          <li style="padding:.5rem 0;border-bottom:1px solid var(--gray-200);">🏥 Chirurgie de précision et rééducation médicale</li>
+          <li style="padding:.5rem 0;border-bottom:1px solid var(--gray-200);">🌾 Agriculture durable et réduction des pesticides</li>
+          <li style="padding:.5rem 0;border-bottom:1px solid var(--gray-200);">👴 Assistance aux personnes âgées et dépendantes</li>
+          <li style="padding:.5rem 0;border-bottom:1px solid var(--gray-200);">🚀 Exploration spatiale et missions dangereuses</li>
+          <li style="padding:.5rem 0;">📈 Gains de productivité et compétitivité industrielle</li>
+        </ul>
+      </div>
+      <div class="card reveal" style="border-top:4px solid #ef4444;">
+        <h3 style="color:#ef4444;margin-bottom:1rem;">⚠️ Risques</h3>
+        <ul style="list-style:none;padding:0;">
+          <li style="padding:.5rem 0;border-bottom:1px solid var(--gray-200);">💼 Destruction accélérée de certains emplois manuels</li>
+          <li style="padding:.5rem 0;border-bottom:1px solid var(--gray-200);">🔒 Risques de cybersécurité sur les systèmes robotiques</li>
+          <li style="padding:.5rem 0;border-bottom:1px solid var(--gray-200);">⚖️ Responsabilité légale en cas d'accident autonome</li>
+          <li style="padding:.5rem 0;border-bottom:1px solid var(--gray-200);">🛡️ Armement autonome et robots militaires létaux</li>
+          <li style="padding:.5rem 0;border-bottom:1px solid var(--gray-200);">📊 Concentration du pouvoir dans quelques entreprises</li>
+          <li style="padding:.5rem 0;">🧩 Dépendance technologique et fragilité des chaînes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Questions éthiques -->
+  <section class="reveal" style="margin-bottom:4rem;">
+    <h2 class="section-title">Questions éthiques fondamentales</h2>
+    <div class="accordion" id="accordionRobotique">
+      <div class="accordion__item">
+        <button class="accordion__btn">Un robot peut-il être tenu responsable de ses actes ?</button>
+        <div class="accordion__panel">
+          <p>Lorsqu'un robot autonome cause un dommage, la question de la responsabilité juridique est complexe : est-ce le fabricant, l'opérateur ou l'utilisateur qui est responsable ? La réglementation européenne sur l'IA (AI Act) commence à encadrer ces questions, mais de nombreux vides juridiques persistent, notamment pour les systèmes à haute autonomie.</p>
+        </div>
+      </div>
+      <div class="accordion__item">
+        <button class="accordion__btn">Faut-il limiter les robots militaires létaux autonomes (LAWS) ?</button>
+        <div class="accordion__panel">
+          <p>Les systèmes d'armes létaux autonomes (LAWS) peuvent sélectionner et engager des cibles sans intervention humaine. Cette perspective divise profondément la communauté internationale. De nombreux experts et organisations humanitaires appellent à un traité international d'interdiction, au nom du principe de distinction et de proportionnalité du droit humanitaire.</p>
+        </div>
+      </div>
+      <div class="accordion__item">
+        <button class="accordion__btn">L'IA dans les robots risque-t-elle de déshumaniser les soins ?</button>
+        <div class="accordion__panel">
+          <p>Dans les établissements de santé et les maisons de retraite, les robots de soin peuvent assurer présence et surveillance. Mais la relation humaine dans les soins a une valeur intrinsèque que la technologie ne peut pas remplacer. Il faut penser la robotique médicale comme un complément, jamais un substitut, à la présence humaine bienveillante.</p>
+        </div>
+      </div>
+      <div class="accordion__item">
+        <button class="accordion__btn">Comment encadrer la surveillance par drones ?</button>
+        <div class="accordion__panel">
+          <p>Les drones équipés de reconnaissance faciale représentent un outil puissant de surveillance publique. Leur déploiement soulève des questions fondamentales sur la vie privée, la liberté de réunion et les droits civiques. En Europe, le RGPD et l'AI Act imposent des restrictions strictes sur l'identification biométrique dans l'espace public.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:2.5rem;" class="reveal">
+        <div class="section-eyebrow" style="justify-content:center;">📰 Veille presse internationale</div>
+        <h2 class="section-title">Articles vérifiés sur la <span>robotique à l'ère de l'IA</span></h2>
+        <p class="section-lead" style="margin:0 auto;">Sélection d'analyses et de reportages sur les robots humanoïdes, industriels et autonomes. Liens directs vers les sources d'origine.</p>
+      </div>
+      <div class="grid-3">
+
+        <article class="press-card reveal">
+          <div class="press-card__top"><span class="press-card__source">The Register</span><span class="press-card__country">🇬🇧 UK</span></div>
+          <div class="press-card__date">Janvier 2026</div>
+          <h3 class="press-card__title">Boston Dynamics beats Tesla to the humanoid robot punch</h3>
+          <p class="press-card__excerpt">Boston Dynamics commence la production commerciale d'Atlas, alors que Tesla peine à tenir les promesses d'Optimus.</p>
+          <a class="press-card__link" href="https://www.theregister.com/2026/01/06/boston_dynamics_atlas_production/" target="_blank" rel="noopener noreferrer">Lire sur The Register →</a>
+        </article>
+
+        <article class="press-card reveal reveal-delay-1">
+          <div class="press-card__top"><span class="press-card__source">Interesting Engineering</span><span class="press-card__country">🇺🇸 USA</span></div>
+          <div class="press-card__date">2025</div>
+          <h3 class="press-card__title">Comparing Boston Dynamics' Atlas and Tesla's Optimus humanoid robots</h3>
+          <p class="press-card__excerpt">Comparatif technique et commercial des deux robots humanoïdes les plus médiatisés du monde.</p>
+          <a class="press-card__link" href="https://interestingengineering.com/innovation/comparing-boston-dynamics-atlas-optimus-humanoid-robots" target="_blank" rel="noopener noreferrer">Lire sur Interesting Engineering →</a>
+        </article>
+
+        <article class="press-card reveal reveal-delay-2">
+          <div class="press-card__top"><span class="press-card__source">Robot Plus</span><span class="press-card__country">🇫🇷 France</span></div>
+          <div class="press-card__date">2025</div>
+          <h3 class="press-card__title">Atlas Boston Dynamics : le robot humanoïde le plus avancé du monde</h3>
+          <p class="press-card__excerpt">Dossier technique francophone détaillant l'évolution d'Atlas et son déploiement industriel chez Hyundai.</p>
+          <a class="press-card__link" href="https://robot-plus.com/accueil/robots-humanoides/modeles/atlas-boston-dynamics-le-robot-humanoide-le-plus-avance-du-monde/" target="_blank" rel="noopener noreferrer">Lire sur robot-plus.com →</a>
+        </article>
+
+        <article class="press-card reveal">
+          <div class="press-card__top"><span class="press-card__source">Robot Plus</span><span class="press-card__country">🇫🇷 France</span></div>
+          <div class="press-card__date">2025</div>
+          <h3 class="press-card__title">Les différents modèles de robots humanoïdes (Guide complet 2025)</h3>
+          <p class="press-card__excerpt">Panorama francophone exhaustif des robots humanoïdes en circulation : Figure, Optimus, Atlas, 1X, Apptronik, Unitree…</p>
+          <a class="press-card__link" href="https://robot-plus.com/accueil/robots-humanoides/modeles/" target="_blank" rel="noopener noreferrer">Lire le guide →</a>
+        </article>
+
+        <article class="press-card reveal reveal-delay-1">
+          <div class="press-card__top"><span class="press-card__source">SMHEC</span><span class="press-card__country">🇫🇷 France</span></div>
+          <div class="press-card__date">2025</div>
+          <h3 class="press-card__title">Robotique : la main-d'œuvre artificielle est-elle pour bientôt ?</h3>
+          <p class="press-card__excerpt">Analyse économique francophone sur le déploiement à grande échelle de robots humanoïdes en milieu industriel.</p>
+          <a class="press-card__link" href="https://www.smhec.org/robotique-boston-dynamics-tesla/" target="_blank" rel="noopener noreferrer">Lire l'analyse →</a>
+        </article>
+
+        <article class="press-card reveal reveal-delay-2">
+          <div class="press-card__top"><span class="press-card__source">Standard Bots</span><span class="press-card__country">🇺🇸 USA</span></div>
+          <div class="press-card__date">2026</div>
+          <h3 class="press-card__title">Tesla robot price in 2026: Everything you need to know about Optimus</h3>
+          <p class="press-card__excerpt">Décryptage du prix annoncé (20 000 à 30 000 $) et des fonctionnalités prévues pour Optimus Gen 3.</p>
+          <a class="press-card__link" href="https://standardbots.com/blog/tesla-robot" target="_blank" rel="noopener noreferrer">Lire sur Standard Bots →</a>
+        </article>
+
+      </div>
+      <div style="text-align:center;margin-top:2rem;font-size:0.85rem;color:#8899BB;">
+        <p>Liens vérifiés en mai 2026. Les articles demeurent la propriété de leurs éditeurs respectifs.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── Footer ────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo" style="display:inline-flex;margin-bottom:0.5rem;">
+          <div class="navbar__logo-icon">🧠</div>
+          <div class="navbar__logo-text">Sensibilisation à l'IA<span>Association loi 1901</span></div>
+        </a>
+        <p>Plateforme indépendante de veille, d'analyse et de sensibilisation aux enjeux de l'intelligence artificielle. Fondée à Nîmes en 2026.</p>
+        <div class="social-links" style="margin-top:1.25rem;">
+          <a href="https://www.linkedin.com/in/ihab-benmahrouz-27a991337/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">💼</a>
+          <a href="https://github.com/IhabBenmahrouz" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">⌨️</a>
+          <a href="https://www.instagram.com/ihabbenmahrouz/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">📷</a>
+          <a href="https://x.com/IhaBenmahrouz17" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter/X">✖️</a>
+          <a href="https://www.facebook.com/profile.php?id=61589297452883" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">👥</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Thématiques</div>
+        <div class="footer__links">
+          <a href="etudes.html">Études &amp; Rapports</a>
+          <a href="bibliotheque.html">Bibliothèque IA</a>
+          <a href="sante-cerveau.html">Santé &amp; Cerveau</a>
+          <a href="environnement-datacenters.html">Environnement</a>
+          <a href="emploi-societe.html">Emploi &amp; Société</a>
+          <a href="robotique.html">Évolution Robotique</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Acteurs</div>
+        <div class="footer__links">
+          <a href="entreprises.html">Entreprises IA</a>
+          <a href="universites.html">Universités</a>
+          <a href="institutions.html">Gouvernements</a>
+          <a href="experts.html">Experts</a>
+          <a href="partenaires.html">Partenaires</a>
+          <a href="actualites.html">Actualités IA</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Ressources</div>
+        <div class="footer__links">
+          <a href="utilisation-responsable.html">Usage responsable</a>
+          <a href="sources.html">Bibliothèque de sources</a>
+          <a href="association.html">Notre association</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Contact</div>
+        <div class="footer__links">
+          <a href="contact.html">Formulaire de contact</a>
+          <a href="contact.html#partenariat">Partenariat</a>
+          <a href="contact.html#rejoindre">Adhésion</a>
+        </div>
+        <p style="font-size:0.8rem;color:var(--gray-600);margin-top:1rem;">
+          📍 Nîmes (30000), Gard<br>
+          📋 N° W302023332
+        </p>
+      </div>
+    </div>
+    <div class="footer__legal-row">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="politique-confidentialite.html">Politique de confidentialité</a>
+      <a href="politique-cookies.html">Politique cookies</a>
+      <button type="button" data-cookie-action="open-preferences">Gérer les cookies</button>
+      <a href="cgu.html">Conditions d'utilisation</a>
+      <a href="accessibilite.html">Accessibilité</a>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Association Sensibilisation à l'IA — Tous droits réservés · Loi du 1<sup>er</sup> juillet 1901</p>
+      <div class="footer__badges">
+        <span class="tag">RGPD conforme</span>
+        <span class="tag tag--green">Sources vérifiées</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Retour en haut ─────────────────────────────────────────── -->
+<button class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</button>
+
+<script src="js/script.js"></script>
+<script src="js/cookies.js"></script>
+<script src="js/enhancements.js"></script>
+</body>
+</html>

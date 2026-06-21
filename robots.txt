@@ -1,0 +1,10 @@
+# robots.txt — Association Sensibilisation à l'IA
+# ⚠️ Mettre à jour l'URL du sitemap avec le domaine de production final.
+
+User-agent: *
+Allow: /
+
+# Ne pas indexer la sauvegarde de l'ancienne version statique
+Disallow: /_backup_html/
+
+Sitemap: https://www.sensibilisation-ia.fr/sitemap.xml

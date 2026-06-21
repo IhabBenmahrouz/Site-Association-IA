@@ -1,0 +1,42 @@
+# Système
+Thumbs.db
+.DS_Store
+desktop.ini
+*~
+*.bak
+*.tmp
+*.swp
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+logs/
+
+# Dépendances éventuelles
+node_modules/
+package-lock.json
+yarn.lock
+
+# Configurations locales / secrets (au cas où)
+.env
+.env.local
+*.local
+
+# Build / cache
+dist/
+build/
+.cache/
+
+# Sauvegarde de la migration HTML -> PHP (ancienne version statique)
+_backup_html/
+
+# Sources PHP — non exécutées par GitHub Pages (site servi en HTML statique).
+# Conservées en local, exclues du dépôt publié.
+*.php
+partials/
+_build.php

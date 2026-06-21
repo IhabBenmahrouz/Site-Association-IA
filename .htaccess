@@ -1,0 +1,6 @@
+# .htaccess — Association Sensibilisation à l'IA
+# Configuration minimale. Le durcissement complet (HTTPS forcé, en-têtes de
+# sécurité, cache, URLs propres) pourra être ajouté ultérieurement.
+
+# Page d'erreur 404 personnalisée
+ErrorDocument 404 /404.php

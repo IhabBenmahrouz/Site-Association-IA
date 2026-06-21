@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sensibilisation à l&#039;IA — Comprendre l&#039;intelligence artificielle</title>
+  <meta name="description" content="Plateforme de veille, d'analyse et de sensibilisation pour comprendre l'IA, ses opportunités, ses risques et ses impacts sur la société.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.sensibilisation-ia.fr/">
+
+  <!-- Open Graph (LinkedIn, Facebook, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sensibilisation à l'IA">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Sensibilisation à l&#039;IA — Comprendre l&#039;intelligence artificielle">
+  <meta property="og:description" content="Plateforme de veille, d&#039;analyse et de sensibilisation pour comprendre l&#039;IA, ses opportunités, ses risques et ses impacts sur la société.">
+  <meta property="og:url" content="https://www.sensibilisation-ia.fr/">
+  <meta property="og:image" content="https://www.sensibilisation-ia.fr/assets/images/og-image.jpg">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sensibilisation à l&#039;IA — Comprendre l&#039;intelligence artificielle">
+  <meta name="twitter:description" content="Plateforme de veille, d&#039;analyse et de sensibilisation pour comprendre l&#039;IA, ses opportunités, ses risques et ses impacts sur la société.">
+  <meta name="twitter:image" content="https://www.sensibilisation-ia.fr/assets/images/og-image.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+</head>
+<body>
+
+<!-- ── Navigation ─────────────────────────────────────────── -->
+<nav class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo">
+      <div class="navbar__logo-icon">🧠</div>
+      <div class="navbar__logo-text">
+        Sensibilisation à l'IA
+        <span>Association loi 1901 · Nîmes</span>
+      </div>
+    </a>
+    <ul class="navbar__nav">
+      <li><a href="index.html"          class="nav-link active">Accueil</a></li>
+      <li><a href="association.html"    class="nav-link">Association</a></li>
+      <li><a href="etudes.html"         class="nav-link">Études &amp; Rapports</a></li>
+      <li class="nav-item has-dropdown">
+        <a href="#" class="nav-link">Acteurs de l'IA <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="dropdown">
+          <a href="entreprises.html">  <span class="drop-icon">🏢</span> Entreprises IA</a>
+          <a href="universites.html">  <span class="drop-icon">🎓</span> Universités &amp; Recherche</a>
+          <a href="institutions.html"> <span class="drop-icon">🏛️</span> Gouvernements &amp; Institutions</a>
+          <a href="experts.html">      <span class="drop-icon">👤</span> Professionnels &amp; Experts</a>
+        </div>
+      </li>
+      <li><a href="sante-cerveau.html"              class="nav-link">Santé &amp; Cerveau</a></li>
+      <li><a href="environnement-datacenters.html"  class="nav-link">Environnement</a></li>
+      <li><a href="emploi-societe.html"             class="nav-link">Emploi &amp; Société</a></li>
+      <li><a href="robotique.html"                  class="nav-link">Robotique</a></li>
+      <li><a href="actualites.html"                 class="nav-link">Actualités</a></li>
+      <li><a href="utilisation-responsable.html"    class="nav-link">Usage responsable</a></li>
+      <li><a href="sources.html"                    class="nav-link">Sources</a></li>
+      <li><a href="contact.html"                    class="nav-link btn btn--primary btn--sm" style="border-radius:8px;">Contact</a></li>
+    </ul>
+    <button class="navbar__burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── Menu Mobile ─────────────────────────────────────────── -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html"         class="mobile-nav-link">🏠 Accueil</a>
+  <a href="association.html"   class="mobile-nav-link">ℹ️ Association</a>
+  <a href="etudes.html"        class="mobile-nav-link">📊 Études &amp; Rapports</a>
+  <div class="mobile-nav-group-title">Acteurs de l'IA</div>
+  <a href="entreprises.html"   class="mobile-sub-link">🏢 Entreprises IA</a>
+  <a href="universites.html"   class="mobile-sub-link">🎓 Universités &amp; Recherche</a>
+  <a href="institutions.html"  class="mobile-sub-link">🏛️ Gouvernements &amp; Institutions</a>
+  <a href="experts.html"       class="mobile-sub-link">👤 Professionnels &amp; Experts</a>
+  <a href="sante-cerveau.html"             class="mobile-nav-link">🧠 Santé &amp; Cerveau</a>
+  <a href="environnement-datacenters.html" class="mobile-nav-link">🌱 Environnement</a>
+  <a href="emploi-societe.html"            class="mobile-nav-link">💼 Emploi &amp; Société</a>
+  <a href="robotique.html"                 class="mobile-nav-link">🤖 Évolution Robotique</a>
+  <a href="actualites.html"               class="mobile-nav-link">📰 Actualités IA</a>
+  <a href="utilisation-responsable.html"  class="mobile-nav-link">✅ Usage responsable</a>
+  <a href="bibliotheque.html"             class="mobile-nav-link">📖 Bibliothèque</a>
+  <a href="partenaires.html"              class="mobile-nav-link">🤝 Partenaires</a>
+  <a href="sources.html"                  class="mobile-nav-link">📚 Sources</a>
+  <a href="contact.html"                  class="mobile-nav-link">✉️ Contact</a>
+</div>
+
+<!-- ── Hero ────────────────────────────────────────────────── -->
+<section class="hero">
+  <div class="hero__bg">
+    <div class="hero__grid"></div>
+    <div class="hero__gradient"></div>
+    <div class="hero__gradient-2"></div>
+  </div>
+  <div class="container">
+    <div class="hero__content">
+      <div class="hero__eyebrow">
+        <span class="dot"></span>
+        Association loi 1901 · Nîmes · W302023332
+      </div>
+      <h1 class="hero__title">
+        Comprendre l'intelligence artificielle<br>
+        <span class="highlight">pour mieux l'utiliser</span>
+      </h1>
+      <p class="hero__sub">
+        Une plateforme de veille, d'analyse et de sensibilisation pour suivre l'évolution de l'IA,
+        ses opportunités, ses risques et ses impacts sur la société. Citoyens, étudiants,
+        professionnels et institutions : l'IA nous concerne tous.
+      </p>
+      <div class="hero__cta">
+        <a href="etudes.html"                    class="btn btn--primary">📊 Découvrir les études</a>
+        <a href="actualites.html"                class="btn btn--outline">📰 Actualités IA</a>
+        <a href="environnement-datacenters.html" class="btn btn--ghost">🌱 Impacts environnementaux</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Barre statistiques ───────────────────────────────────── -->
+<div class="stats-bar">
+  <div class="stats-bar__inner">
+    <div class="stat-item">
+      <div class="stat-item__number"><span class="counter" data-target="14" data-suffix="">0</span></div>
+      <div class="stat-item__label">Pages thématiques</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-item__number"><span class="counter" data-target="10" data-suffix="+">0</span></div>
+      <div class="stat-item__label">Acteurs de l'IA</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-item__number"><span class="counter" data-target="100" data-suffix="%">0</span></div>
+      <div class="stat-item__label">Sources vérifiées</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-item__number"><span class="counter" data-target="0" data-suffix="€">0</span></div>
+      <div class="stat-item__label">Cotisation annuelle</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Présentation rapide ──────────────────────────────────── -->
+<section class="section section--alt">
+  <div class="container">
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:center;">
+      <div class="reveal">
+        <div class="section-eyebrow">Notre mission</div>
+        <h2 class="section-title">Une association au service de la <span>compréhension citoyenne</span></h2>
+        <p class="section-lead">
+          L'association <strong>Sensibilisation à l'IA</strong>, fondée à Nîmes en avril 2026 et officiellement enregistrée
+          sous le numéro <strong>W302023332</strong>, a pour mission de collecter, vérifier, centraliser et diffuser
+          des informations fiables sur l'intelligence artificielle.
+        </p>
+        <p style="margin-top:1rem;font-size:0.9rem;color:var(--gray-400);line-height:1.7;">
+          Nous ne sommes ni pro-IA ni anti-IA. Nous croyons en une utilisation <strong>responsable, modérée
+          et éclairée</strong> des outils numériques, avec un esprit critique permanent et une attention portée
+          aux enjeux éthiques, sociaux et environnementaux.
+        </p>
+        <div style="margin-top:2rem;">
+          <a href="association.html" class="btn btn--primary">En savoir plus sur l'association →</a>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2" style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+        <div class="card" style="background:rgba(26,111,255,0.08);border-color:rgba(26,111,255,0.2);">
+          <div style="font-size:2rem;margin-bottom:0.75rem;">🧭</div>
+          <div class="card__title" style="font-size:1rem;">Esprit critique</div>
+          <p class="card__text">Vérifier, comparer, questionner chaque information.</p>
+        </div>
+        <div class="card" style="background:rgba(0,200,232,0.07);border-color:rgba(0,200,232,0.2);">
+          <div style="font-size:2rem;margin-bottom:0.75rem;">🔍</div>
+          <div class="card__title" style="font-size:1rem;">Transparence</div>
+          <p class="card__text">Des sources citées, tracées et accessibles.</p>
+        </div>
+        <div class="card" style="background:rgba(123,94,255,0.07);border-color:rgba(123,94,255,0.2);">
+          <div style="font-size:2rem;margin-bottom:0.75rem;">🌐</div>
+          <div class="card__title" style="font-size:1rem;">Accessibilité</div>
+          <p class="card__text">Un savoir ouvert à tous, sans jargon inutile.</p>
+        </div>
+        <div class="card" style="background:rgba(34,197,94,0.07);border-color:rgba(34,197,94,0.2);">
+          <div style="font-size:2rem;margin-bottom:0.75rem;">⚖️</div>
+          <div class="card__title" style="font-size:1rem;">Responsabilité</div>
+          <p class="card__text">Promouvoir un usage éthique et modéré de l'IA.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── 4 Piliers ────────────────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem;" class="reveal">
+      <div class="section-eyebrow" style="justify-content:center;">Nos engagements</div>
+      <h2 class="section-title">Les 4 piliers de notre action</h2>
+      <p class="section-lead" style="margin:0 auto;">Ce que l'association s'engage à faire pour vous et pour la société.</p>
+    </div>
+    <div class="grid-4">
+      <div class="card reveal reveal-delay-1" style="text-align:center;padding:2.5rem 1.75rem;">
+        <div style="font-size:2.5rem;margin-bottom:1rem;">📡</div>
+        <div class="card__title">Informer</div>
+        <p class="card__text">Centraliser des actualités et études rigoureusement sélectionnées sur l'intelligence artificielle.</p>
+      </div>
+      <div class="card reveal reveal-delay-2" style="text-align:center;padding:2.5rem 1.75rem;">
+        <div style="font-size:2.5rem;margin-bottom:1rem;">💡</div>
+        <div class="card__title">Sensibiliser</div>
+        <p class="card__text">Aider chaque utilisateur à comprendre les avantages, les risques et les limites de l'IA.</p>
+      </div>
+      <div class="card reveal reveal-delay-3" style="text-align:center;padding:2.5rem 1.75rem;">
+        <div style="font-size:2.5rem;margin-bottom:1rem;">🔬</div>
+        <div class="card__title">Analyser</div>
+        <p class="card__text">Étudier les impacts humains, économiques, sociaux et environnementaux de l'IA.</p>
+      </div>
+      <div class="card reveal reveal-delay-4" style="text-align:center;padding:2.5rem 1.75rem;">
+        <div style="font-size:2.5rem;margin-bottom:1rem;">🤝</div>
+        <div class="card__title">Responsabiliser</div>
+        <p class="card__text">Promouvoir une utilisation modérée, critique et éthique des outils d'IA au quotidien.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Thématiques principales ──────────────────────────────── -->
+<section class="section section--alt">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem;" class="reveal">
+      <div class="section-eyebrow" style="justify-content:center;">Explorer</div>
+      <h2 class="section-title">Les grandes <span>thématiques</span></h2>
+      <p class="section-lead" style="margin:0 auto;">L'IA n'est pas seulement une question informatique — elle touche tous les domaines de la vie humaine.</p>
+    </div>
+    <div class="grid-3" style="gap:1rem;">
+      <a href="etudes.html" class="card reveal" style="display:flex;flex-direction:column;gap:0.5rem;text-decoration:none;">
+        <div style="font-size:1.8rem;">📊</div>
+        <div class="card__title">Études &amp; Rapports</div>
+        <p class="card__text">Rapports scientifiques, gouvernementaux et universitaires vérifiés.</p>
+        <span class="tag" style="margin-top:0.5rem;align-self:flex-start;">Explorer →</span>
+      </a>
+      <a href="entreprises.html" class="card reveal reveal-delay-1" style="display:flex;flex-direction:column;gap:0.5rem;text-decoration:none;">
+        <div style="font-size:1.8rem;">🏢</div>
+        <div class="card__title">Entreprises IA</div>
+        <p class="card__text">OpenAI, Google, Anthropic, Mistral… Les acteurs qui façonnent l'IA.</p>
+        <span class="tag" style="margin-top:0.5rem;align-self:flex-start;">Explorer →</span>
+      </a>
+      <a href="universites.html" class="card reveal reveal-delay-2" style="display:flex;flex-direction:column;gap:0.5rem;text-decoration:none;">
+        <div style="font-size:1.8rem;">🎓</div>
+        <div class="card__title">Universités &amp; Recherche</div>
+        <p class="card__text">MIT, Stanford, Sorbonne, CNRS… Les laboratoires qui font avancer la science.</p>
+        <span class="tag" style="margin-top:0.5rem;align-self:flex-start;">Explorer →</span>
+      </a>
+      <a href="sante-cerveau.html" class="card reveal" style="display:flex;flex-direction:column;gap:0.5rem;text-decoration:none;">
+        <div style="font-size:1.8rem;">🧠</div>
+        <div class="card__title">Santé &amp; Cerveau</div>
+        <p class="card__text">Comment l'IA affecte-t-elle notre cognition, notre mémoire et notre santé mentale ?</p>
+        <span class="tag tag--cyan" style="margin-top:0.5rem;align-self:flex-start;">Explorer →</span>
+      </a>
+      <a href="environnement-datacenters.html" class="card reveal reveal-delay-1" style="display:flex;flex-direction:column;gap:0.5rem;text-decoration:none;">
+        <div style="font-size:1.8rem;">🌱</div>
+        <div class="card__title">Environnement &amp; Data Centers</div>
+        <p class="card__text">L'IA consomme de l'eau, de l'électricité et des ressources. Comprendre son empreinte.</p>
+        <span class="tag tag--green" style="margin-top:0.5rem;align-self:flex-start;">Explorer →</span>
+      </a>
+      <a href="emploi-societe.html" class="card reveal reveal-delay-2" style="display:flex;flex-direction:column;gap:0.5rem;text-decoration:none;">
+        <div style="font-size:1.8rem;">💼</div>
+        <div class="card__title">Emploi &amp; Société</div>
+        <p class="card__text">Transformation des métiers, automatisation et nouvelles compétences requises.</p>
+        <span class="tag tag--violet" style="margin-top:0.5rem;align-self:flex-start;">Explorer →</span>
+      </a>
+      <a href="robotique.html" class="card reveal" style="display:flex;flex-direction:column;gap:0.5rem;text-decoration:none;grid-column:span 1;">
+        <div style="font-size:1.8rem;">🤖</div>
+        <div class="card__title">Évolution Robotique</div>
+        <p class="card__text">Des robots industriels aux humanoïdes : comment l'IA transforme la robotique.</p>
+        <span class="tag tag--orange" style="margin-top:0.5rem;align-self:flex-start;">Explorer →</span>
+      </a>
+      <a href="institutions.html" class="card reveal reveal-delay-1" style="display:flex;flex-direction:column;gap:0.5rem;text-decoration:none;">
+        <div style="font-size:1.8rem;">🏛️</div>
+        <div class="card__title">Gouvernements &amp; Institutions</div>
+        <p class="card__text">CNIL, UE, UNESCO, ONU : les régulations et politiques autour de l'IA.</p>
+        <span class="tag" style="margin-top:0.5rem;align-self:flex-start;">Explorer →</span>
+      </a>
+      <a href="utilisation-responsable.html" class="card reveal reveal-delay-2" style="display:flex;flex-direction:column;gap:0.5rem;text-decoration:none;">
+        <div style="font-size:1.8rem;">✅</div>
+        <div class="card__title">Utilisation responsable</div>
+        <p class="card__text">Conseils pratiques pour utiliser l'IA sans tomber dans ses pièges.</p>
+        <span class="tag tag--green" style="margin-top:0.5rem;align-self:flex-start;">Explorer →</span>
+      </a>
+      <a href="bibliotheque.html" class="card reveal" style="display:flex;flex-direction:column;gap:0.5rem;text-decoration:none;">
+        <div style="font-size:1.8rem;">📖</div>
+        <div class="card__title">Bibliothèque IA</div>
+        <p class="card__text">Sélection de 12 livres incontournables sur l'IA, avec couvertures interactives.</p>
+        <span class="tag tag--cyan" style="margin-top:0.5rem;align-self:flex-start;">Explorer →</span>
+      </a>
+      <a href="partenaires.html" class="card reveal reveal-delay-1" style="display:flex;flex-direction:column;gap:0.5rem;text-decoration:none;">
+        <div style="font-size:1.8rem;">🤝</div>
+        <div class="card__title">Nos partenaires</div>
+        <p class="card__text">Bibliothèques, universités et institutions qui nous accompagnent au quotidien.</p>
+        <span class="tag tag--violet" style="margin-top:0.5rem;align-self:flex-start;">Explorer →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Dernières actualités ──────────────────────────────────── -->
+<section class="section">
+  <div class="container">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:2.5rem;flex-wrap:wrap;gap:1rem;" class="reveal">
+      <div>
+        <div class="section-eyebrow">Veille</div>
+        <h2 class="section-title">Dernières <span>actualités IA</span></h2>
+      </div>
+      <a href="actualites.html" class="btn btn--outline">Voir toutes les actualités →</a>
+    </div>
+    <div class="grid-3">
+      <article class="card reveal news-card" data-category="environnement">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem;">
+          <span class="tag tag--green">🌱 Environnement</span>
+          <span style="font-size:0.75rem;color:var(--gray-400);">Mai 2025</span>
+        </div>
+        <h3 class="card__title">L'empreinte carbone des data centers dépasse celle de l'aviation mondiale</h3>
+        <p class="card__text">Une étude internationale révèle que la consommation électrique des centres de données dédiés à l'IA a augmenté de 40 % en un an, soulevant des questions sur la durabilité du secteur.</p>
+        <div class="card__meta">
+          <span class="badge-fiability badge-high">✓ Haute fiabilité</span>
+          <span>Source institutionnelle</span>
+        </div>
+      </article>
+      <article class="card reveal reveal-delay-1 news-card" data-category="emploi">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem;">
+          <span class="tag tag--violet">💼 Emploi</span>
+          <span style="font-size:0.75rem;color:var(--gray-400);">Avril 2025</span>
+        </div>
+        <h3 class="card__title">L'OCDE projette la transformation de 40 % des emplois d'ici 2030</h3>
+        <p class="card__text">Selon un rapport de l'Organisation de Coopération et de Développement Économiques, l'IA va transformer en profondeur des dizaines de métiers sans nécessairement les supprimer.</p>
+        <div class="card__meta">
+          <span class="badge-fiability badge-high">✓ Haute fiabilité</span>
+          <span>Source OCDE</span>
+        </div>
+      </article>
+      <article class="card reveal reveal-delay-2 news-card" data-category="sante">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:1rem;">
+          <span class="tag tag--cyan">🧠 Santé mentale</span>
+          <span style="font-size:0.75rem;color:var(--gray-400);">Mars 2025</span>
+        </div>
+        <h3 class="card__title">Des chercheurs alertent sur la dépendance cognitive aux assistants IA</h3>
+        <p class="card__text">Une étude menée dans plusieurs universités européennes montre que l'utilisation intensive des IA génératives réduit l'effort cognitif spontané chez les étudiants.</p>
+        <div class="card__meta">
+          <span class="badge-fiability badge-medium">~ Fiabilité moyenne</span>
+          <span>Source universitaire</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA final ─────────────────────────────────────────────── -->
+<section class="section section--alt">
+  <div class="container" style="text-align:center;">
+    <div class="reveal" style="max-width:600px;margin:0 auto;">
+      <div class="section-eyebrow" style="justify-content:center;">Rejoindre</div>
+      <h2 class="section-title">Vous souhaitez <span>contribuer</span> ?</h2>
+      <p class="section-lead" style="margin:0 auto 2rem;">
+        Adhérent·e, partenaire, expert·e ou simple citoyen·ne — votre engagement est précieux pour
+        développer une culture numérique responsable autour de l'intelligence artificielle.
+      </p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="contact.html"    class="btn btn--primary">Nous contacter</a>
+        <a href="association.html" class="btn btn--outline">Découvrir l'association</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo" style="display:inline-flex;margin-bottom:0.5rem;">
+          <div class="navbar__logo-icon">🧠</div>
+          <div class="navbar__logo-text">Sensibilisation à l'IA<span>Association loi 1901</span></div>
+        </a>
+        <p>Plateforme indépendante de veille, d'analyse et de sensibilisation aux enjeux de l'intelligence artificielle. Fondée à Nîmes en 2026.</p>
+        <div class="social-links" style="margin-top:1.25rem;">
+          <a href="https://www.linkedin.com/in/ihab-benmahrouz-27a991337/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">💼</a>
+          <a href="https://github.com/IhabBenmahrouz" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">⌨️</a>
+          <a href="https://www.instagram.com/ihabbenmahrouz/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">📷</a>
+          <a href="https://x.com/IhaBenmahrouz17" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter/X">✖️</a>
+          <a href="https://www.facebook.com/profile.php?id=61589297452883" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">👥</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Thématiques</div>
+        <div class="footer__links">
+          <a href="etudes.html">Études &amp; Rapports</a>
+          <a href="bibliotheque.html">Bibliothèque IA</a>
+          <a href="sante-cerveau.html">Santé &amp; Cerveau</a>
+          <a href="environnement-datacenters.html">Environnement</a>
+          <a href="emploi-societe.html">Emploi &amp; Société</a>
+          <a href="robotique.html">Évolution Robotique</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Acteurs</div>
+        <div class="footer__links">
+          <a href="entreprises.html">Entreprises IA</a>
+          <a href="universites.html">Universités</a>
+          <a href="institutions.html">Gouvernements</a>
+          <a href="experts.html">Experts</a>
+          <a href="partenaires.html">Partenaires</a>
+          <a href="actualites.html">Actualités IA</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Ressources</div>
+        <div class="footer__links">
+          <a href="utilisation-responsable.html">Usage responsable</a>
+          <a href="sources.html">Bibliothèque de sources</a>
+          <a href="association.html">Notre association</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Contact</div>
+        <div class="footer__links">
+          <a href="contact.html">Formulaire de contact</a>
+          <a href="contact.html#partenariat">Partenariat</a>
+          <a href="contact.html#rejoindre">Adhésion</a>
+        </div>
+        <p style="font-size:0.8rem;color:var(--gray-600);margin-top:1rem;">
+          📍 Nîmes (30000), Gard<br>
+          📋 N° W302023332
+        </p>
+      </div>
+    </div>
+    <div class="footer__legal-row">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="politique-confidentialite.html">Politique de confidentialité</a>
+      <a href="politique-cookies.html">Politique cookies</a>
+      <button type="button" data-cookie-action="open-preferences">Gérer les cookies</button>
+      <a href="cgu.html">Conditions d'utilisation</a>
+      <a href="accessibilite.html">Accessibilité</a>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Association Sensibilisation à l'IA — Tous droits réservés · Loi du 1<sup>er</sup> juillet 1901</p>
+      <div class="footer__badges">
+        <span class="tag">RGPD conforme</span>
+        <span class="tag tag--green">Sources vérifiées</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Retour en haut ─────────────────────────────────────────── -->
+<button class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</button>
+
+<script src="js/script.js"></script>
+<script src="js/cookies.js"></script>
+<script src="js/enhancements.js"></script>
+</body>
+</html>

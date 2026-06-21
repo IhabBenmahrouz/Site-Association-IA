@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Utilisation Responsable — Sensibilisation à l&#039;IA</title>
+  <meta name="description" content="Conseils pratiques pour utiliser l'IA avec discernement, esprit critique et responsabilité selon votre profil.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.sensibilisation-ia.fr/utilisation-responsable.html">
+
+  <!-- Open Graph (LinkedIn, Facebook, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sensibilisation à l'IA">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Utilisation Responsable — Sensibilisation à l&#039;IA">
+  <meta property="og:description" content="Conseils pratiques pour utiliser l&#039;IA avec discernement, esprit critique et responsabilité selon votre profil.">
+  <meta property="og:url" content="https://www.sensibilisation-ia.fr/utilisation-responsable.html">
+  <meta property="og:image" content="https://www.sensibilisation-ia.fr/assets/images/og-image.jpg">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Utilisation Responsable — Sensibilisation à l&#039;IA">
+  <meta name="twitter:description" content="Conseils pratiques pour utiliser l&#039;IA avec discernement, esprit critique et responsabilité selon votre profil.">
+  <meta name="twitter:image" content="https://www.sensibilisation-ia.fr/assets/images/og-image.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+</head>
+<body>
+
+<!-- ── Navigation ─────────────────────────────────────────── -->
+<nav class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo">
+      <div class="navbar__logo-icon">🧠</div>
+      <div class="navbar__logo-text">
+        Sensibilisation à l'IA
+        <span>Association loi 1901 · Nîmes</span>
+      </div>
+    </a>
+    <ul class="navbar__nav">
+      <li><a href="index.html"          class="nav-link">Accueil</a></li>
+      <li><a href="association.html"    class="nav-link">Association</a></li>
+      <li><a href="etudes.html"         class="nav-link">Études &amp; Rapports</a></li>
+      <li class="nav-item has-dropdown">
+        <a href="#" class="nav-link">Acteurs de l'IA <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="dropdown">
+          <a href="entreprises.html">  <span class="drop-icon">🏢</span> Entreprises IA</a>
+          <a href="universites.html">  <span class="drop-icon">🎓</span> Universités &amp; Recherche</a>
+          <a href="institutions.html"> <span class="drop-icon">🏛️</span> Gouvernements &amp; Institutions</a>
+          <a href="experts.html">      <span class="drop-icon">👤</span> Professionnels &amp; Experts</a>
+        </div>
+      </li>
+      <li><a href="sante-cerveau.html"              class="nav-link">Santé &amp; Cerveau</a></li>
+      <li><a href="environnement-datacenters.html"  class="nav-link">Environnement</a></li>
+      <li><a href="emploi-societe.html"             class="nav-link">Emploi &amp; Société</a></li>
+      <li><a href="robotique.html"                  class="nav-link">Robotique</a></li>
+      <li><a href="actualites.html"                 class="nav-link">Actualités</a></li>
+      <li><a href="utilisation-responsable.html"    class="nav-link active">Usage responsable</a></li>
+      <li><a href="sources.html"                    class="nav-link">Sources</a></li>
+      <li><a href="contact.html"                    class="nav-link btn btn--primary btn--sm" style="border-radius:8px;">Contact</a></li>
+    </ul>
+    <button class="navbar__burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── Menu Mobile ─────────────────────────────────────────── -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html"         class="mobile-nav-link">🏠 Accueil</a>
+  <a href="association.html"   class="mobile-nav-link">ℹ️ Association</a>
+  <a href="etudes.html"        class="mobile-nav-link">📊 Études &amp; Rapports</a>
+  <div class="mobile-nav-group-title">Acteurs de l'IA</div>
+  <a href="entreprises.html"   class="mobile-sub-link">🏢 Entreprises IA</a>
+  <a href="universites.html"   class="mobile-sub-link">🎓 Universités &amp; Recherche</a>
+  <a href="institutions.html"  class="mobile-sub-link">🏛️ Gouvernements &amp; Institutions</a>
+  <a href="experts.html"       class="mobile-sub-link">👤 Professionnels &amp; Experts</a>
+  <a href="sante-cerveau.html"             class="mobile-nav-link">🧠 Santé &amp; Cerveau</a>
+  <a href="environnement-datacenters.html" class="mobile-nav-link">🌱 Environnement</a>
+  <a href="emploi-societe.html"            class="mobile-nav-link">💼 Emploi &amp; Société</a>
+  <a href="robotique.html"                 class="mobile-nav-link">🤖 Évolution Robotique</a>
+  <a href="actualites.html"               class="mobile-nav-link">📰 Actualités IA</a>
+  <a href="utilisation-responsable.html"  class="mobile-nav-link">✅ Usage responsable</a>
+  <a href="bibliotheque.html"             class="mobile-nav-link">📖 Bibliothèque</a>
+  <a href="partenaires.html"              class="mobile-nav-link">🤝 Partenaires</a>
+  <a href="sources.html"                  class="mobile-nav-link">📚 Sources</a>
+  <a href="contact.html"                  class="mobile-nav-link">✉️ Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero__badge">✅ Utilisation Responsable</div>
+    <h1 class="page-hero__title">Utiliser l'IA intelligemment &amp; responsablement</h1>
+    <p class="page-hero__sub">L'intelligence artificielle est un outil puissant. Elle peut accélérer, aider et transformer la façon de travailler et d'apprendre. Mais son efficacité dépend de la manière dont on l'utilise.</p>
+  </div>
+</section>
+
+<main class="container" style="padding-top:3rem;padding-bottom:4rem;">
+
+  <!-- Message central -->
+  <section class="reveal" style="margin-bottom:3rem;text-align:center;">
+    <div class="info-box info-box--blue" style="max-width:760px;margin:0 auto;">
+      <strong>Notre position :</strong> Nous ne sommes ni anti-IA ni pro-IA aveuglément. L'IA est un outil. Comme tout outil, son impact dépend de la compétence, de l'intention et de la vigilance de celui qui l'utilise.
+    </div>
+  </section>
+
+  <!-- Les 10 règles d'or -->
+  <section class="reveal" style="margin-bottom:4rem;">
+    <h2 class="section-title">Les 10 règles d'or pour utiliser l'IA intelligemment</h2>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:1.5rem;">
+
+      <div class="card card--compact reveal" style="border-left:4px solid var(--electric);">
+        <div style="font-size:1.5rem;margin-bottom:.5rem;">1️⃣</div>
+        <strong>Ne copiez pas sans comprendre</strong>
+        <p style="margin-top:.5rem;font-size:.9rem;color:var(--gray-700);">Utiliser une réponse IA sans la comprendre vous prive d'apprentissage et vous expose à des erreurs non détectées. Reformulez, vérifiez, appropriez-vous le contenu.</p>
+      </div>
+
+      <div class="card card--compact reveal" style="border-left:4px solid var(--electric);">
+        <div style="font-size:1.5rem;margin-bottom:.5rem;">2️⃣</div>
+        <strong>Vérifiez toujours les sources</strong>
+        <p style="margin-top:.5rem;font-size:.9rem;color:var(--gray-700);">L'IA peut inventer des références, des chiffres ou des faits (hallucinations). Croisez systématiquement avec des sources primaires : sites officiels, publications scientifiques, presse vérifiée.</p>
+      </div>
+
+      <div class="card card--compact reveal" style="border-left:4px solid var(--electric);">
+        <div style="font-size:1.5rem;margin-bottom:.5rem;">3️⃣</div>
+        <strong>Ne transmettez pas de données personnelles sensibles</strong>
+        <p style="margin-top:.5rem;font-size:.9rem;color:var(--gray-700);">Ne saisissez jamais vos données bancaires, mots de passe, numéro de sécurité sociale ou informations médicales dans une interface IA. Ces données peuvent être utilisées pour améliorer les modèles.</p>
+      </div>
+
+      <div class="card card--compact reveal" style="border-left:4px solid var(--electric);">
+        <div style="font-size:1.5rem;margin-bottom:.5rem;">4️⃣</div>
+        <strong>Traitez l'IA comme un assistant, pas comme un oracle</strong>
+        <p style="margin-top:.5rem;font-size:.9rem;color:var(--gray-700);">L'IA est un outil probabiliste. Elle génère la réponse la plus probable, pas nécessairement la plus exacte. Gardez votre jugement critique en permanence.</p>
+      </div>
+
+      <div class="card card--compact reveal" style="border-left:4px solid var(--electric);">
+        <div style="font-size:1.5rem;margin-bottom:.5rem;">5️⃣</div>
+        <strong>Croisez plusieurs sources et outils</strong>
+        <p style="margin-top:.5rem;font-size:.9rem;color:var(--gray-700);">Ne vous fiez pas à un seul modèle IA. Comparez les réponses, consultez des experts humains sur les sujets sensibles, et confrontez les informations obtenues.</p>
+      </div>
+
+      <div class="card card--compact reveal" style="border-left:4px solid var(--electric);">
+        <div style="font-size:1.5rem;margin-bottom:.5rem;">6️⃣</div>
+        <strong>Comprenez les limites des modèles</strong>
+        <p style="margin-top:.5rem;font-size:.9rem;color:var(--gray-700);">Les LLM ont une date limite de connaissance, des biais liés à leurs données d'entraînement, et des difficultés avec les raisonnements complexes en plusieurs étapes. Connaître ces limites permet de mieux utiliser ces outils.</p>
+      </div>
+
+      <div class="card card--compact reveal" style="border-left:4px solid var(--electric);">
+        <div style="font-size:1.5rem;margin-bottom:.5rem;">7️⃣</div>
+        <strong>Méfiez-vous des hallucinations</strong>
+        <p style="margin-top:.5rem;font-size:.9rem;color:var(--gray-700);">Une IA peut affirmer avec assurance des informations fausses ou inventées. Ce phénomène est appelé hallucination. Il est particulièrement dangereux dans les domaines médical, juridique et scientifique.</p>
+      </div>
+
+      <div class="card card--compact reveal" style="border-left:4px solid var(--electric);">
+        <div style="font-size:1.5rem;margin-bottom:.5rem;">8️⃣</div>
+        <strong>Évitez la dépendance excessive</strong>
+        <p style="margin-top:.5rem;font-size:.9rem;color:var(--gray-700);">Utiliser l'IA pour tout peut affaiblir votre mémoire, votre créativité et votre capacité de réflexion autonome. Conservez des activités intellectuelles sans IA pour entretenir votre esprit critique.</p>
+      </div>
+
+      <div class="card card--compact reveal" style="border-left:4px solid var(--electric);">
+        <div style="font-size:1.5rem;margin-bottom:.5rem;">9️⃣</div>
+        <strong>Respectez le droit d'auteur</strong>
+        <p style="margin-top:.5rem;font-size:.9rem;color:var(--gray-700);">Les textes, images et codes générés par IA peuvent intégrer des œuvres protégées. Vérifiez les droits d'usage avant toute publication ou commercialisation, surtout dans un cadre professionnel.</p>
+      </div>
+
+      <div class="card card--compact reveal" style="border-left:4px solid var(--electric);">
+        <div style="font-size:1.5rem;margin-bottom:.5rem;">🔟</div>
+        <strong>Protégez vos données personnelles</strong>
+        <p style="margin-top:.5rem;font-size:.9rem;color:var(--gray-700);">Vérifiez la politique de confidentialité des outils IA utilisés. En Europe, le RGPD vous donne des droits sur vos données. Préférez des outils conformes RGPD pour vos usages professionnels.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Conseils par public -->
+  <section class="reveal" style="margin-bottom:4rem;">
+    <h2 class="section-title">Conseils adaptés à votre profil</h2>
+
+    <div class="tabs" id="publicTabs" style="margin-bottom:2rem;">
+      <button class="tab-btn active" data-tab="etudiants">🎓 Étudiants</button>
+      <button class="tab-btn" data-tab="parents">👨‍👩‍👧 Parents</button>
+      <button class="tab-btn" data-tab="enseignants">📚 Enseignants</button>
+      <button class="tab-btn" data-tab="entrepreneurs">💼 Entrepreneurs</button>
+      <button class="tab-btn" data-tab="salaries">🏢 Salariés</button>
+      <button class="tab-btn" data-tab="associations">🤝 Associations</button>
+      <button class="tab-btn" data-tab="collectivites">🏛️ Collectivités</button>
+    </div>
+
+    <div id="tab-etudiants" class="tab-panel active">
+      <div class="info-box info-box--blue" style="margin-bottom:1.5rem;">
+        <strong>🎓 Pour les étudiants</strong> — L'IA peut être un puissant allié pédagogique si elle est utilisée pour apprendre et non pour remplacer la réflexion.
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;">
+        <div class="card card--compact"><strong>✅ À faire</strong><br>Utiliser l'IA pour obtenir des explications supplémentaires sur un cours difficile.</div>
+        <div class="card card--compact"><strong>✅ À faire</strong><br>Demander à l'IA de corriger votre plan ou votre argumentaire, pas de l'écrire à votre place.</div>
+        <div class="card card--compact"><strong>✅ À faire</strong><br>Reformuler les réponses de l'IA avec vos propres mots pour tester votre compréhension.</div>
+        <div class="card card--compact"><strong>⚠️ À éviter</strong><br>Soumettre un devoir généré entièrement par IA sans modification ni compréhension.</div>
+        <div class="card card--compact"><strong>⚠️ À éviter</strong><br>Faire confiance à l'IA pour des calculs ou des références sans vérification manuelle.</div>
+        <div class="card card--compact"><strong>⚠️ À éviter</strong><br>Dépendre de l'IA pour mémoriser à votre place — la mémoire s'entretient.</div>
+      </div>
+    </div>
+
+    <div id="tab-parents" class="tab-panel" style="display:none;">
+      <div class="info-box info-box--blue" style="margin-bottom:1.5rem;">
+        <strong>👨‍👩‍👧 Pour les parents</strong> — L'enjeu est d'accompagner vos enfants dans un usage éclairé de l'IA, sans interdire mais en encadrant.
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;">
+        <div class="card card--compact"><strong>💡 Conseil 1</strong><br>Discutez avec votre enfant de ce qu'est réellement une IA : un programme statistique, pas une intelligence humaine.</div>
+        <div class="card card--compact"><strong>💡 Conseil 2</strong><br>Vérifiez les conditions d'utilisation des outils IA utilisés par votre enfant (âge minimum, données collectées).</div>
+        <div class="card card--compact"><strong>💡 Conseil 3</strong><br>Encouragez votre enfant à montrer son raisonnement, pas seulement le résultat final d'une IA.</div>
+        <div class="card card--compact"><strong>💡 Conseil 4</strong><br>Parlez des risques des deepfakes, des fausses informations générées par IA et de la vérification des sources.</div>
+        <div class="card card--compact"><strong>💡 Conseil 5</strong><br>Réservez des moments sans écran et sans IA pour favoriser la créativité et la réflexion autonome.</div>
+        <div class="card card--compact"><strong>💡 Conseil 6</strong><br>Signalez immédiatement tout contenu inapproprié généré par IA que votre enfant pourrait rencontrer.</div>
+      </div>
+    </div>
+
+    <div id="tab-enseignants" class="tab-panel" style="display:none;">
+      <div class="info-box info-box--blue" style="margin-bottom:1.5rem;">
+        <strong>📚 Pour les enseignants</strong> — L'IA transforme les pratiques pédagogiques. L'enjeu est d'en faire un levier d'apprentissage plutôt qu'un facteur de passivité.
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;">
+        <div class="card card--compact"><strong>🎯 Stratégie 1</strong><br>Intégrez l'IA comme outil de différenciation pédagogique : elle peut adapter les exercices aux niveaux des élèves.</div>
+        <div class="card card--compact"><strong>🎯 Stratégie 2</strong><br>Créez des exercices qui demandent aux élèves d'analyser, corriger ou contredire les réponses d'une IA.</div>
+        <div class="card card--compact"><strong>🎯 Stratégie 3</strong><br>Enseignez explicitement la vérification des sources et la détection des hallucinations dans les réponses IA.</div>
+        <div class="card card--compact"><strong>🎯 Stratégie 4</strong><br>Réfléchissez à des modalités d'évaluation qui valorisent le raisonnement et l'analyse, moins reproductibles par IA.</div>
+        <div class="card card--compact"><strong>🎯 Stratégie 5</strong><br>Référez-vous aux recommandations de l'UNESCO et du Ministère de l'Éducation nationale sur l'IA à l'école.</div>
+        <div class="card card--compact"><strong>🎯 Stratégie 6</strong><br>Partagez vos expériences avec vos collègues : la pratique collective est plus efficace que l'expérimentation isolée.</div>
+      </div>
+    </div>
+
+    <div id="tab-entrepreneurs" class="tab-panel" style="display:none;">
+      <div class="info-box info-box--blue" style="margin-bottom:1.5rem;">
+        <strong>💼 Pour les entrepreneurs</strong> — L'IA représente une opportunité de productivité majeure, mais son intégration doit être réfléchie et conforme.
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;">
+        <div class="card card--compact"><strong>🔧 Action 1</strong><br>Identifiez les tâches à faible valeur ajoutée que l'IA peut automatiser pour libérer du temps à vos collaborateurs.</div>
+        <div class="card card--compact"><strong>🔧 Action 2</strong><br>Vérifiez la conformité RGPD des outils IA utilisés dans votre entreprise, notamment pour les données clients.</div>
+        <div class="card card--compact"><strong>🔧 Action 3</strong><br>Formez vos équipes : un collaborateur qui comprend l'IA est plus efficace qu'un utilisateur passif.</div>
+        <div class="card card--compact"><strong>🔧 Action 4</strong><br>Ne sous-traitez pas votre stratégie ou vos décisions importantes à une IA sans validation humaine experte.</div>
+        <div class="card card--compact"><strong>🔧 Action 5</strong><br>Documentez les usages IA dans votre entreprise pour anticiper les obligations réglementaires de l'AI Act européen.</div>
+        <div class="card card--compact"><strong>🔧 Action 6</strong><br>Évaluez les impacts sur vos collaborateurs avant tout déploiement IA massif : accompagnez, ne remplacez pas.</div>
+      </div>
+    </div>
+
+    <div id="tab-salaries" class="tab-panel" style="display:none;">
+      <div class="info-box info-box--blue" style="margin-bottom:1.5rem;">
+        <strong>🏢 Pour les salariés</strong> — L'IA va transformer la plupart des métiers. Ceux qui sauront l'utiliser et en comprendre les limites auront un avantage professionnel durable.
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;">
+        <div class="card card--compact"><strong>📈 Conseil 1</strong><br>Formez-vous aux outils IA de votre secteur : c'est un investissement dans votre employabilité future.</div>
+        <div class="card card--compact"><strong>📈 Conseil 2</strong><br>N'utilisez pas l'IA pour des décisions importantes sans validation : la responsabilité reste humaine.</div>
+        <div class="card card--compact"><strong>📈 Conseil 3</strong><br>Signalez à votre employeur tout usage d'IA qui pourrait contrevenir à la politique de confidentialité de l'entreprise.</div>
+        <div class="card card--compact"><strong>📈 Conseil 4</strong><br>Valorisez ce que l'IA ne peut pas reproduire : créativité, relationnel, éthique professionnelle, contexte métier.</div>
+        <div class="card card--compact"><strong>📈 Conseil 5</strong><br>Participez aux formations proposées par votre employeur sur l'IA — elles deviennent stratégiques.</div>
+        <div class="card card--compact"><strong>📈 Conseil 6</strong><br>Restez vigilant sur les données que vous saisissez dans des outils IA non validés par votre service informatique.</div>
+      </div>
+    </div>
+
+    <div id="tab-associations" class="tab-panel" style="display:none;">
+      <div class="info-box info-box--blue" style="margin-bottom:1.5rem;">
+        <strong>🤝 Pour les associations</strong> — L'IA peut amplifier l'impact d'une association à budget limité, mais elle doit être utilisée de façon transparente vis-à-vis des bénéficiaires et des membres.
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;">
+        <div class="card card--compact"><strong>🌟 Opportunité 1</strong><br>Utilisez l'IA pour rédiger des dossiers de subvention, des rapports d'activité ou des communications, en les validant humainement.</div>
+        <div class="card card--compact"><strong>🌟 Opportunité 2</strong><br>Automatisez les tâches administratives répétitives pour concentrer les ressources bénévoles sur les actions à impact.</div>
+        <div class="card card--compact"><strong>⚠️ Vigilance 1</strong><br>Informez clairement vos bénéficiaires si un outil IA est utilisé dans des services qui les concernent directement.</div>
+        <div class="card card--compact"><strong>⚠️ Vigilance 2</strong><br>Ne confiez pas les données de vos bénéficiaires à des outils IA non conformes RGPD — votre responsabilité est engagée.</div>
+        <div class="card card--compact"><strong>⚠️ Vigilance 3</strong><br>Vérifiez que les décisions assistées par IA respectent les valeurs et la mission de votre association.</div>
+        <div class="card card--compact"><strong>⚠️ Vigilance 4</strong><br>Sensibilisez vos membres et bénévoles aux usages responsables de l'IA — vous pouvez utiliser nos ressources librement.</div>
+      </div>
+    </div>
+
+    <div id="tab-collectivites" class="tab-panel" style="display:none;">
+      <div class="info-box info-box--blue" style="margin-bottom:1.5rem;">
+        <strong>🏛️ Pour les collectivités locales</strong> — Les collectivités doivent être exemplaires dans leur rapport à l'IA, tant pour leurs agents que pour les citoyens qu'elles servent.
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1rem;">
+        <div class="card card--compact"><strong>🏛️ Priorité 1</strong><br>Adoptez une charte d'usage de l'IA pour vos agents, définissant les usages autorisés et les limites à respecter.</div>
+        <div class="card card--compact"><strong>🏛️ Priorité 2</strong><br>Toute décision ayant un impact sur les droits des citoyens doit rester sous contrôle humain — l'IA ne peut pas décider seule.</div>
+        <div class="card card--compact"><strong>🏛️ Priorité 3</strong><br>Exigez la transparence et la conformité RGPD dans tous les appels d'offres intégrant des technologies IA.</div>
+        <div class="card card--compact"><strong>🏛️ Priorité 4</strong><br>Associez les citoyens aux choix de déploiement de l'IA dans les services publics locaux.</div>
+        <div class="card card--compact"><strong>🏛️ Priorité 5</strong><br>Anticipez les projets de data centers sur votre territoire : négociez les compensations et les engagements environnementaux.</div>
+        <div class="card card--compact"><strong>🏛️ Priorité 6</strong><br>Formez vos agents : l'IA au service public doit être maîtrisée par ceux qui l'utilisent, pas subie.</div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Section hallucinations -->
+  <section class="reveal" style="margin-bottom:4rem;">
+    <h2 class="section-title">Comprendre les hallucinations de l'IA</h2>
+    <div class="info-box info-box--orange" style="max-width:800px;margin:0 auto 2rem auto;">
+      <strong>⚠️ Qu'est-ce qu'une hallucination IA ?</strong> C'est quand un modèle IA génère des informations présentées avec assurance mais qui sont fausses, inventées ou non vérifiables. Ce phénomène est inhérent aux grands modèles de langage (LLM) et n'est pas encore résolu.
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.5rem;">
+      <div class="card card--compact reveal">
+        <strong>📌 Exemples courants</strong>
+        <ul style="margin-top:.5rem;font-size:.9rem;padding-left:1rem;">
+          <li>Références bibliographiques inventées</li>
+          <li>Statistiques non vérifiables</li>
+          <li>Biographies partiellement fausses</li>
+          <li>Lois ou jugements juridiques inexistants</li>
+          <li>Médicaments ou dosages erronés</li>
+        </ul>
+      </div>
+      <div class="card card--compact reveal">
+        <strong>🔍 Comment les détecter</strong>
+        <ul style="margin-top:.5rem;font-size:.9rem;padding-left:1rem;">
+          <li>Chercher les références dans les sources primaires</li>
+          <li>Copier les citations dans un moteur de recherche</li>
+          <li>Interroger plusieurs modèles différents</li>
+          <li>Consulter un expert humain sur les sujets sensibles</li>
+          <li>Vérifier les chiffres sur des sites officiels</li>
+        </ul>
+      </div>
+      <div class="card card--compact reveal">
+        <strong>🛡️ Domaines à risque élevé</strong>
+        <ul style="margin-top:.5rem;font-size:.9rem;padding-left:1rem;">
+          <li>Médecine et conseils de santé</li>
+          <li>Droit et jurisprudence</li>
+          <li>Finance et investissements</li>
+          <li>Histoire récente et actualités</li>
+          <li>Recherche scientifique spécialisée</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt">
+    <div class="container">
+      <div style="text-align:center;margin-bottom:2.5rem;" class="reveal">
+        <div class="section-eyebrow" style="justify-content:center;">📰 Guides & ressources institutionnelles</div>
+        <h2 class="section-title">Pour aller plus loin <span>(presse + institutions)</span></h2>
+        <p class="section-lead" style="margin:0 auto;">Guides officiels, recommandations institutionnelles et articles d'analyse. Tous les liens pointent directement vers les sources d'origine.</p>
+      </div>
+      <div class="grid-3">
+
+        <article class="press-card reveal">
+          <div class="press-card__top"><span class="press-card__source">UNESCO</span><span class="press-card__country">🌍 International</span></div>
+          <div class="press-card__date">2024–2025</div>
+          <h3 class="press-card__title">UNESCO's AI competency frameworks for students and teachers</h3>
+          <p class="press-card__excerpt">Cadres de compétences IA officiels pour enseignants et élèves : éthique, esprit critique, usage responsable.</p>
+          <a class="press-card__link" href="https://www.unesco.org/en/articles/what-you-need-know-about-unescos-new-ai-competency-frameworks-students-and-teachers" target="_blank" rel="noopener noreferrer">Lire sur UNESCO →</a>
+        </article>
+
+        <article class="press-card reveal reveal-delay-1">
+          <div class="press-card__top"><span class="press-card__source">UNESCO</span><span class="press-card__country">🌍 International</span></div>
+          <div class="press-card__date">2023–2025</div>
+          <h3 class="press-card__title">Guidance for generative AI in education and research</h3>
+          <p class="press-card__excerpt">Lignes directrices officielles UNESCO sur l'usage de l'IA générative dans l'éducation et la recherche.</p>
+          <a class="press-card__link" href="https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research" target="_blank" rel="noopener noreferrer">Lire le guide →</a>
+        </article>
+
+        <article class="press-card reveal reveal-delay-2">
+          <div class="press-card__top"><span class="press-card__source">UNESCO Courier</span><span class="press-card__country">🌍 International</span></div>
+          <div class="press-card__date">2025</div>
+          <h3 class="press-card__title">Learning to think in the AI era</h3>
+          <p class="press-card__excerpt">Dossier complet sur le maintien de la pensée critique face aux assistants IA.</p>
+          <a class="press-card__link" href="https://courier.unesco.org/en/articles/learning-think-ai-era" target="_blank" rel="noopener noreferrer">Lire le dossier →</a>
+        </article>
+
+        <article class="press-card reveal">
+          <div class="press-card__top"><span class="press-card__source">CNIL</span><span class="press-card__country">🇫🇷 France</span></div>
+          <div class="press-card__date">2025</div>
+          <h3 class="press-card__title">Intelligence artificielle — portail CNIL</h3>
+          <p class="press-card__excerpt">Recommandations officielles de la CNIL sur RGPD et IA, bac à sable IA, fiches pratiques pour développeurs et organisations.</p>
+          <a class="press-card__link" href="https://www.cnil.fr/fr/intelligence-artificielle" target="_blank" rel="noopener noreferrer">Lire sur cnil.fr →</a>
+        </article>
+
+        <article class="press-card reveal reveal-delay-1">
+          <div class="press-card__top"><span class="press-card__source">World Economic Forum</span><span class="press-card__country">🌍 International</span></div>
+          <div class="press-card__date">Mai 2025</div>
+          <h3 class="press-card__title">Why AI literacy is now a core competency in education</h3>
+          <p class="press-card__excerpt">Le WEF positionne la littératie IA parmi les compétences cœur du XXIe siècle, à enseigner dès le primaire.</p>
+          <a class="press-card__link" href="https://www.weforum.org/stories/2025/05/why-ai-literacy-is-now-a-core-competency-in-education/" target="_blank" rel="noopener noreferrer">Lire sur WEF →</a>
+        </article>
+
+        <article class="press-card reveal reveal-delay-2">
+          <div class="press-card__top"><span class="press-card__source">L'ADN</span><span class="press-card__country">🇫🇷 France</span></div>
+          <div class="press-card__date">2025</div>
+          <h3 class="press-card__title">L'IA rend-elle idiot ? Une étude du MIT alerte</h3>
+          <p class="press-card__excerpt">Lecture critique de l'étude MIT sur la « dette cognitive » liée à l'usage non encadré des LLM.</p>
+          <a class="press-card__link" href="https://www.ladn.eu/tech-a-suivre/lia-rend-elle-idiot-une-etude-du-mit-alerte-sur-ses-effets-cognitifs/" target="_blank" rel="noopener noreferrer">Lire sur ladn.eu →</a>
+        </article>
+
+        <article class="press-card reveal">
+          <div class="press-card__top"><span class="press-card__source">Polytechnique Insights</span><span class="press-card__country">🇫🇷 France</span></div>
+          <div class="press-card__date">2025</div>
+          <h3 class="press-card__title">Generative AI: the risk of cognitive atrophy</h3>
+          <p class="press-card__excerpt">Comment éviter l'atrophie cognitive : conseils issus de la recherche en neurosciences appliquée à l'IA générative.</p>
+          <a class="press-card__link" href="https://www.polytechnique-insights.com/en/columns/neuroscience/generative-ai-the-risk-of-cognitive-atrophy/" target="_blank" rel="noopener noreferrer">Lire l'article →</a>
+        </article>
+
+        <article class="press-card reveal reveal-delay-1">
+          <div class="press-card__top"><span class="press-card__source">Lefebvre Dalloz</span><span class="press-card__country">🇫🇷 France</span></div>
+          <div class="press-card__date">2025</div>
+          <h3 class="press-card__title">L'impact de l'IA sur notre cerveau, nos soft skills et notre créativité</h3>
+          <p class="press-card__excerpt">Recommandations pour préserver soft skills, créativité et autonomie face à l'IA.</p>
+          <a class="press-card__link" href="https://formation.lefebvre-dalloz.fr/actualite/limpact-de-lia-sur-notre-cerveau-nos-soft-skills-et-notre-creativite" target="_blank" rel="noopener noreferrer">Lire l'analyse →</a>
+        </article>
+
+      </div>
+      <div style="text-align:center;margin-top:2rem;font-size:0.85rem;color:#8899BB;">
+        <p>Liens vérifiés en mai 2026. Les contenus demeurent la propriété de leurs éditeurs respectifs.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ── Footer ────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo" style="display:inline-flex;margin-bottom:0.5rem;">
+          <div class="navbar__logo-icon">🧠</div>
+          <div class="navbar__logo-text">Sensibilisation à l'IA<span>Association loi 1901</span></div>
+        </a>
+        <p>Plateforme indépendante de veille, d'analyse et de sensibilisation aux enjeux de l'intelligence artificielle. Fondée à Nîmes en 2026.</p>
+        <div class="social-links" style="margin-top:1.25rem;">
+          <a href="https://www.linkedin.com/in/ihab-benmahrouz-27a991337/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">💼</a>
+          <a href="https://github.com/IhabBenmahrouz" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">⌨️</a>
+          <a href="https://www.instagram.com/ihabbenmahrouz/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">📷</a>
+          <a href="https://x.com/IhaBenmahrouz17" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter/X">✖️</a>
+          <a href="https://www.facebook.com/profile.php?id=61589297452883" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">👥</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Thématiques</div>
+        <div class="footer__links">
+          <a href="etudes.html">Études &amp; Rapports</a>
+          <a href="bibliotheque.html">Bibliothèque IA</a>
+          <a href="sante-cerveau.html">Santé &amp; Cerveau</a>
+          <a href="environnement-datacenters.html">Environnement</a>
+          <a href="emploi-societe.html">Emploi &amp; Société</a>
+          <a href="robotique.html">Évolution Robotique</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Acteurs</div>
+        <div class="footer__links">
+          <a href="entreprises.html">Entreprises IA</a>
+          <a href="universites.html">Universités</a>
+          <a href="institutions.html">Gouvernements</a>
+          <a href="experts.html">Experts</a>
+          <a href="partenaires.html">Partenaires</a>
+          <a href="actualites.html">Actualités IA</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Ressources</div>
+        <div class="footer__links">
+          <a href="utilisation-responsable.html">Usage responsable</a>
+          <a href="sources.html">Bibliothèque de sources</a>
+          <a href="association.html">Notre association</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Contact</div>
+        <div class="footer__links">
+          <a href="contact.html">Formulaire de contact</a>
+          <a href="contact.html#partenariat">Partenariat</a>
+          <a href="contact.html#rejoindre">Adhésion</a>
+        </div>
+        <p style="font-size:0.8rem;color:var(--gray-600);margin-top:1rem;">
+          📍 Nîmes (30000), Gard<br>
+          📋 N° W302023332
+        </p>
+      </div>
+    </div>
+    <div class="footer__legal-row">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="politique-confidentialite.html">Politique de confidentialité</a>
+      <a href="politique-cookies.html">Politique cookies</a>
+      <button type="button" data-cookie-action="open-preferences">Gérer les cookies</button>
+      <a href="cgu.html">Conditions d'utilisation</a>
+      <a href="accessibilite.html">Accessibilité</a>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Association Sensibilisation à l'IA — Tous droits réservés · Loi du 1<sup>er</sup> juillet 1901</p>
+      <div class="footer__badges">
+        <span class="tag">RGPD conforme</span>
+        <span class="tag tag--green">Sources vérifiées</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Retour en haut ─────────────────────────────────────────── -->
+<button class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</button>
+
+<script src="js/script.js"></script>
+<script src="js/cookies.js"></script>
+<script src="js/enhancements.js"></script>
+</body>
+</html>

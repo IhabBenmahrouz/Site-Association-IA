@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Environnement &amp;amp; Data Centers — Sensibilisation à l&#039;IA</title>
+  <meta name="description" content="L'IA consomme de l'eau et de l'électricité. Comprendre l'impact environnemental des data centers.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.sensibilisation-ia.fr/environnement-datacenters.html">
+
+  <!-- Open Graph (LinkedIn, Facebook, etc.) -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Sensibilisation à l'IA">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Environnement &amp;amp; Data Centers — Sensibilisation à l&#039;IA">
+  <meta property="og:description" content="L&#039;IA consomme de l&#039;eau et de l&#039;électricité. Comprendre l&#039;impact environnemental des data centers.">
+  <meta property="og:url" content="https://www.sensibilisation-ia.fr/environnement-datacenters.html">
+  <meta property="og:image" content="https://www.sensibilisation-ia.fr/assets/images/og-image.jpg">
+
+  <!-- Twitter / X Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Environnement &amp;amp; Data Centers — Sensibilisation à l&#039;IA">
+  <meta name="twitter:description" content="L&#039;IA consomme de l&#039;eau et de l&#039;électricité. Comprendre l&#039;impact environnemental des data centers.">
+  <meta name="twitter:image" content="https://www.sensibilisation-ia.fr/assets/images/og-image.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+</head>
+<body>
+
+<!-- ── Navigation ─────────────────────────────────────────── -->
+<nav class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo">
+      <div class="navbar__logo-icon">🧠</div>
+      <div class="navbar__logo-text">
+        Sensibilisation à l'IA
+        <span>Association loi 1901 · Nîmes</span>
+      </div>
+    </a>
+    <ul class="navbar__nav">
+      <li><a href="index.html"          class="nav-link">Accueil</a></li>
+      <li><a href="association.html"    class="nav-link">Association</a></li>
+      <li><a href="etudes.html"         class="nav-link">Études &amp; Rapports</a></li>
+      <li class="nav-item has-dropdown">
+        <a href="#" class="nav-link">Acteurs de l'IA <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></a>
+        <div class="dropdown">
+          <a href="entreprises.html">  <span class="drop-icon">🏢</span> Entreprises IA</a>
+          <a href="universites.html">  <span class="drop-icon">🎓</span> Universités &amp; Recherche</a>
+          <a href="institutions.html"> <span class="drop-icon">🏛️</span> Gouvernements &amp; Institutions</a>
+          <a href="experts.html">      <span class="drop-icon">👤</span> Professionnels &amp; Experts</a>
+        </div>
+      </li>
+      <li><a href="sante-cerveau.html"              class="nav-link">Santé &amp; Cerveau</a></li>
+      <li><a href="environnement-datacenters.html"  class="nav-link active">Environnement</a></li>
+      <li><a href="emploi-societe.html"             class="nav-link">Emploi &amp; Société</a></li>
+      <li><a href="robotique.html"                  class="nav-link">Robotique</a></li>
+      <li><a href="actualites.html"                 class="nav-link">Actualités</a></li>
+      <li><a href="utilisation-responsable.html"    class="nav-link">Usage responsable</a></li>
+      <li><a href="sources.html"                    class="nav-link">Sources</a></li>
+      <li><a href="contact.html"                    class="nav-link btn btn--primary btn--sm" style="border-radius:8px;">Contact</a></li>
+    </ul>
+    <button class="navbar__burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ── Menu Mobile ─────────────────────────────────────────── -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html"         class="mobile-nav-link">🏠 Accueil</a>
+  <a href="association.html"   class="mobile-nav-link">ℹ️ Association</a>
+  <a href="etudes.html"        class="mobile-nav-link">📊 Études &amp; Rapports</a>
+  <div class="mobile-nav-group-title">Acteurs de l'IA</div>
+  <a href="entreprises.html"   class="mobile-sub-link">🏢 Entreprises IA</a>
+  <a href="universites.html"   class="mobile-sub-link">🎓 Universités &amp; Recherche</a>
+  <a href="institutions.html"  class="mobile-sub-link">🏛️ Gouvernements &amp; Institutions</a>
+  <a href="experts.html"       class="mobile-sub-link">👤 Professionnels &amp; Experts</a>
+  <a href="sante-cerveau.html"             class="mobile-nav-link">🧠 Santé &amp; Cerveau</a>
+  <a href="environnement-datacenters.html" class="mobile-nav-link">🌱 Environnement</a>
+  <a href="emploi-societe.html"            class="mobile-nav-link">💼 Emploi &amp; Société</a>
+  <a href="robotique.html"                 class="mobile-nav-link">🤖 Évolution Robotique</a>
+  <a href="actualites.html"               class="mobile-nav-link">📰 Actualités IA</a>
+  <a href="utilisation-responsable.html"  class="mobile-nav-link">✅ Usage responsable</a>
+  <a href="bibliotheque.html"             class="mobile-nav-link">📖 Bibliothèque</a>
+  <a href="partenaires.html"              class="mobile-nav-link">🤝 Partenaires</a>
+  <a href="sources.html"                  class="mobile-nav-link">📚 Sources</a>
+  <a href="contact.html"                  class="mobile-nav-link">✉️ Contact</a>
+</div>
+
+<section class="page-hero">
+  <div class="page-hero__bg"></div>
+  <div class="page-hero__content">
+    <div class="page-hero__breadcrumb"><a href="index.html">Accueil</a> <span>/</span> <span>Environnement &amp; Data Centers</span></div>
+    <div class="section-eyebrow">Impact environnemental</div>
+    <h1 class="page-hero__title">Environnement &amp; <span style="color:var(--blue-bright)">Data Centers</span></h1>
+    <p class="page-hero__lead">L'intelligence artificielle n'est pas immatérielle. Chaque requête est traitée par des serveurs qui consomment de l'électricité, produisent de la chaleur et nécessitent de l'eau. Voici ce que cela signifie concrètement.</p>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:3rem;" class="reveal">
+      <div class="section-eyebrow" style="justify-content:center;">Les bases</div>
+      <h2 class="section-title">L'IA a une <span>empreinte physique</span></h2>
+    </div>
+    <div class="grid-3">
+      <div class="card reveal"><div style="font-size:2.5rem;margin-bottom:1rem;">🏗️</div><h3 class="card__title">Qu'est-ce qu'un data center ?</h3><p class="card__text">Un data center est un bâtiment industriel rempli de milliers de serveurs informatiques. Ces serveurs reçoivent, traitent et stockent des données — dont vos requêtes IA — 24h/24, 7j/7.</p></div>
+      <div class="card reveal reveal-delay-1"><div style="font-size:2.5rem;margin-bottom:1rem;">🔥</div><h3 class="card__title">Pourquoi les serveurs chauffent ?</h3><p class="card__text">Les processeurs (CPU/GPU) qui exécutent les calculs IA produisent de la chaleur par effet Joule. Sans refroidissement actif, les serveurs surchauffent et tombent en panne en quelques minutes.</p></div>
+      <div class="card reveal reveal-delay-2"><div style="font-size:2.5rem;margin-bottom:1rem;">💧</div><h3 class="card__title">L'eau dans les data centers</h3><p class="card__text">Certains systèmes de refroidissement utilisent de l'eau. Un grand data center peut consommer plusieurs millions de litres d'eau par jour — l'équivalent d'une ville de taille moyenne.</p></div>
+      <div class="card reveal"><div style="font-size:2.5rem;margin-bottom:1rem;">⚡</div><h3 class="card__title">Consommation électrique</h3><p class="card__text">Selon l'Agence Internationale de l'Énergie, les data centers mondiaux consomment entre 200 et 250 TWh par an — soit environ 1 % de la consommation électrique mondiale, en forte croissance.</p></div>
+      <div class="card reveal reveal-delay-1"><div style="font-size:2.5rem;margin-bottom:1rem;">🌍</div><h3 class="card__title">Impact sur les territoires</h3><p class="card__text">Les data centers s'installent là où l'électricité est abondante et bon marché. Cela peut créer des tensions avec les usages locaux (agriculture, industries existantes, résidentiel).</p></div>
+      <div class="card reveal reveal-delay-2"><div style="font-size:2.5rem;margin-bottom:1rem;">📡</div><h3 class="card__title">Pression sur les réseaux</h3><p class="card__text">Un grand data center peut représenter la consommation de plusieurs dizaines de milliers de foyers. Les gestionnaires de réseaux électriques doivent anticiper ces pics de demande locaux.</p></div>
+    </div>
+  </div>
+</section>
+<section class="section section--alt">
+  <div class="container">
+    <div class="reveal" style="max-width:800px;margin:0 auto;text-align:center;margin-bottom:3rem;">
+      <div class="section-eyebrow" style="justify-content:center;">Enjeu territorial</div>
+      <h2 class="section-title">Data centers : innovation ou <span>tension territoriale</span> ?</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;">
+      <div class="reveal">
+        <h3 style="font-family:var(--font-display);font-weight:700;margin-bottom:1.25rem;color:var(--blue-bright);">✅ Arguments en faveur</h3>
+        <div style="display:flex;flex-direction:column;gap:0.75rem;">
+          <div class="card" style="padding:1rem;"><p style="font-size:0.875rem;">Création d'emplois directs hautement qualifiés dans les zones d'implantation</p></div>
+          <div class="card" style="padding:1rem;"><p style="font-size:0.875rem;">Revenus fiscaux pour les collectivités locales (taxe foncière, contribution économique)</p></div>
+          <div class="card" style="padding:1rem;"><p style="font-size:0.875rem;">Infrastructure numérique stratégique pour la souveraineté nationale</p></div>
+          <div class="card" style="padding:1rem;"><p style="font-size:0.875rem;">Projets pilotes de réutilisation de la chaleur pour chauffer des logements ou des serres</p></div>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-2">
+        <h3 style="font-family:var(--font-display);font-weight:700;margin-bottom:1.25rem;color:var(--cyan);">⚠️ Points de vigilance</h3>
+        <div style="display:flex;flex-direction:column;gap:0.75rem;">
+          <div class="card" style="padding:1rem;border-color:rgba(251,191,36,0.2);"><p style="font-size:0.875rem;">Consommation d'eau pouvant entrer en compétition avec l'agriculture et les usages domestiques</p></div>
+          <div class="card" style="padding:1rem;border-color:rgba(251,191,36,0.2);"><p style="font-size:0.875rem;">Emplois locaux souvent moins nombreux que promis à long terme (forte automatisation)</p></div>
+          <div class="card" style="padding:1rem;border-color:rgba(251,191,36,0.2);"><p style="font-size:0.875rem;">Artificialisation des sols et impact paysager dans les zones rurales</p></div>
+          <div class="card" style="padding:1rem;border-color:rgba(251,191,36,0.2);"><p style="font-size:0.875rem;">Bruit des systèmes de refroidissement et nuisances pour les riverains</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:2.5rem;" class="reveal">
+      <div class="section-eyebrow" style="justify-content:center;">Perspectives</div>
+      <h2 class="section-title">Vers des solutions <span>durables</span></h2>
+    </div>
+    <div class="grid-3">
+      <div class="card reveal"><div style="font-size:2rem;margin-bottom:0.75rem;">❄️</div><h3 class="card__title">Refroidissement liquide</h3><p class="card__text">Immersion des serveurs dans des fluides diélectriques, plus efficace que l'air conditionné. Réduit la consommation énergétique de 30 à 40 %.</p></div>
+      <div class="card reveal reveal-delay-1"><div style="font-size:2rem;margin-bottom:0.75rem;">♻️</div><h3 class="card__title">Réutilisation de la chaleur</h3><p class="card__text">Certains data centers récupèrent leur chaleur fatale pour chauffer des bâtiments résidentiels, des piscines ou des serres agricoles.</p></div>
+      <div class="card reveal reveal-delay-2"><div style="font-size:2rem;margin-bottom:0.75rem;">☀️</div><h3 class="card__title">Énergies renouvelables</h3><p class="card__text">Microsoft, Google et Amazon s'engagent à alimenter leurs data centers à 100 % en énergies renouvelables, avec des résultats contrastés selon les régions.</p></div>
+      <div class="card reveal"><div style="font-size:2rem;margin-bottom:0.75rem;">🤏</div><h3 class="card__title">Optimisation des modèles</h3><p class="card__text">Des modèles IA plus compacts (distillation, quantification) offrent des performances comparables avec une fraction de la consommation énergétique.</p></div>
+      <div class="card reveal reveal-delay-1"><div style="font-size:2rem;margin-bottom:0.75rem;">📊</div><h3 class="card__title">Transparence environnementale</h3><p class="card__text">Standardisation du reporting environnemental des opérateurs : PUE, consommation d'eau, bilan carbone. L'UE travaille sur des obligations de divulgation.</p></div>
+      <div class="card reveal reveal-delay-2"><div style="font-size:2rem;margin-bottom:0.75rem;">🧑‍🤝‍🧑</div><h3 class="card__title">Sensibilisation des utilisateurs</h3><p class="card__text">Un usage raisonné de l'IA — éviter les requêtes inutiles, optimiser ses prompts — contribue à réduire collectivement la charge des data centers.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Articles de presse vérifiés ───────────────────────────── -->
+<section class="section section--alt">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:2.5rem;" class="reveal">
+      <div class="section-eyebrow" style="justify-content:center;">📰 Veille presse internationale</div>
+      <h2 class="section-title">Articles vérifiés sur <span>l'impact environnemental de l'IA</span></h2>
+      <p class="section-lead" style="margin:0 auto;">Sélection d'articles, dossiers et rapports issus de médias et institutions de recherche, vérifiés à la date de mise à jour. Liens directs vers les sources d'origine.</p>
+    </div>
+    <div class="grid-3">
+
+      <article class="press-card reveal">
+        <div class="press-card__top">
+          <span class="press-card__source">MIT News</span>
+          <span class="press-card__country">🇺🇸 USA</span>
+        </div>
+        <div class="press-card__date">Janvier 2025</div>
+        <h3 class="press-card__title">Explained: Generative AI's environmental impact</h3>
+        <p class="press-card__excerpt">Le MIT publie une analyse complète de l'empreinte carbone, énergétique et hydrique de l'IA générative — formation et inférence.</p>
+        <a class="press-card__link" href="https://news.mit.edu/2025/explained-generative-ai-environmental-impact-0117" target="_blank" rel="noopener noreferrer">Lire sur MIT News →</a>
+      </article>
+
+      <article class="press-card reveal reveal-delay-1">
+        <div class="press-card__top">
+          <span class="press-card__source">Bloomberg</span>
+          <span class="press-card__country">🇺🇸 USA</span>
+        </div>
+        <div class="press-card__date">2025</div>
+        <h3 class="press-card__title">The AI Boom Is Draining Water From the Areas That Need It Most</h3>
+        <p class="press-card__excerpt">Enquête Bloomberg : 160 nouveaux data centers IA en 3 ans aux USA, beaucoup dans des zones de stress hydrique. Visualisation cartographique.</p>
+        <a class="press-card__link" href="https://www.bloomberg.com/graphics/2025-ai-impacts-data-centers-water-data/" target="_blank" rel="noopener noreferrer">Lire sur Bloomberg →</a>
+      </article>
+
+      <article class="press-card reveal reveal-delay-2">
+        <div class="press-card__top">
+          <span class="press-card__source">Cornell Chronicle</span>
+          <span class="press-card__country">🇺🇸 USA</span>
+        </div>
+        <div class="press-card__date">Novembre 2025</div>
+        <h3 class="press-card__title">'Roadmap' shows the environmental impact of AI data center boom</h3>
+        <p class="press-card__excerpt">L'université Cornell publie une feuille de route quantifiant l'explosion environnementale du boom des data centers IA.</p>
+        <a class="press-card__link" href="https://news.cornell.edu/stories/2025/11/roadmap-shows-environmental-impact-ai-data-center-boom" target="_blank" rel="noopener noreferrer">Lire sur Cornell Chronicle →</a>
+      </article>
+
+      <article class="press-card reveal">
+        <div class="press-card__top">
+          <span class="press-card__source">Nature Sustainability</span>
+          <span class="press-card__country">🇬🇧 UK</span>
+        </div>
+        <div class="press-card__date">2025</div>
+        <h3 class="press-card__title">Environmental impact and net-zero pathways for sustainable AI servers in the USA</h3>
+        <p class="press-card__excerpt">Article scientifique évalué par les pairs : trajectoires possibles vers la neutralité carbone des serveurs IA américains.</p>
+        <a class="press-card__link" href="https://www.nature.com/articles/s41893-025-01681-y" target="_blank" rel="noopener noreferrer">Lire sur Nature Sustainability →</a>
+      </article>
+
+      <article class="press-card reveal reveal-delay-1">
+        <div class="press-card__top">
+          <span class="press-card__source">Le Monde Informatique</span>
+          <span class="press-card__country">🇫🇷 France</span>
+        </div>
+        <div class="press-card__date">2025</div>
+        <h3 class="press-card__title">La consommation d'eau liée à l'IA générative inquiète</h3>
+        <p class="press-card__excerpt">Microsoft a vu sa consommation d'eau bondir de 34 % en un an. Décryptage de l'empreinte hydrique des grands modèles.</p>
+        <a class="press-card__link" href="https://www.lemondeinformatique.fr/actualites/lire-la-consommation-d-eau-liee-a-l-ia-generative-inquiete-91508.html" target="_blank" rel="noopener noreferrer">Lire sur Le Monde Informatique →</a>
+      </article>
+
+      <article class="press-card reveal reveal-delay-2">
+        <div class="press-card__top">
+          <span class="press-card__source">Le Monde Informatique</span>
+          <span class="press-card__country">🇫🇷 France</span>
+        </div>
+        <div class="press-card__date">2025</div>
+        <h3 class="press-card__title">Le nucléaire, une planche de salut énergétique pour l'IA</h3>
+        <p class="press-card__excerpt">Le retour en grâce du nucléaire (Three Mile Island, SMR) pour alimenter les data centers IA : analyse des annonces Microsoft, Google et Amazon.</p>
+        <a class="press-card__link" href="https://www.lemondeinformatique.fr/actualites/lire-le-nucleaire-une-planche-de-salut-energetique-pour-l-ia-94255.html" target="_blank" rel="noopener noreferrer">Lire sur Le Monde Informatique →</a>
+      </article>
+
+      <article class="press-card reveal">
+        <div class="press-card__top">
+          <span class="press-card__source">Le Monde Informatique</span>
+          <span class="press-card__country">🇫🇷 France</span>
+        </div>
+        <div class="press-card__date">2025</div>
+        <h3 class="press-card__title">Face à la croissance des datacenters IA, Gartner prédit des pénuries d'électricité</h3>
+        <p class="press-card__excerpt">Gartner anticipe que 40 % des data centers IA pourraient devoir restreindre leurs opérations d'ici 2027 par manque de capacité électrique.</p>
+        <a class="press-card__link" href="https://www.lemondeinformatique.fr/actualites/lire-face-a-la-croissance-des-datacenters-ia-gartner-predit-des-penuries-d-electricite-95225.html" target="_blank" rel="noopener noreferrer">Lire l'article →</a>
+      </article>
+
+      <article class="press-card reveal reveal-delay-1">
+        <div class="press-card__top">
+          <span class="press-card__source">LeMagIT</span>
+          <span class="press-card__country">🇫🇷 France</span>
+        </div>
+        <div class="press-card__date">2025</div>
+        <h3 class="press-card__title">Datacenters IA en France : promesses contre promesses</h3>
+        <p class="press-card__excerpt">Bilan critique des annonces de méga-investissements en data centers IA en France et de leurs implications territoriales.</p>
+        <a class="press-card__link" href="https://www.lemagit.fr/actualites/366619359/Datacenters-IA-en-France-promesses-contre-promesses" target="_blank" rel="noopener noreferrer">Lire sur LeMagIT →</a>
+      </article>
+
+      <article class="press-card reveal reveal-delay-2">
+        <div class="press-card__top">
+          <span class="press-card__source">Lincoln Institute of Land Policy</span>
+          <span class="press-card__country">🇺🇸 USA</span>
+        </div>
+        <div class="press-card__date">2025</div>
+        <h3 class="press-card__title">Data Drain: The Land and Water Impacts of the AI Boom</h3>
+        <p class="press-card__excerpt">Étude sur la pression foncière et hydrique des data centers IA aux USA, avec cartes de zones à risque.</p>
+        <a class="press-card__link" href="https://www.lincolninst.edu/publications/land-lines-magazine/articles/land-water-impacts-data-centers/" target="_blank" rel="noopener noreferrer">Lire sur Lincoln Institute →</a>
+      </article>
+
+      <article class="press-card reveal">
+        <div class="press-card__top">
+          <span class="press-card__source">AGU Advances (Wiley)</span>
+          <span class="press-card__country">🌍 International</span>
+        </div>
+        <div class="press-card__date">2026</div>
+        <h3 class="press-card__title">Data Centers Water Footprint: The Need for More Transparency</h3>
+        <p class="press-card__excerpt">Article scientifique réclamant davantage de transparence sur l'empreinte hydrique réelle des opérateurs de data centers.</p>
+        <a class="press-card__link" href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2025AV002140" target="_blank" rel="noopener noreferrer">Lire sur AGU Advances →</a>
+      </article>
+
+    </div>
+    <div style="text-align:center;margin-top:2rem;font-size:0.85rem;color:#8899BB;">
+      <p>Liste sélective non exhaustive. Les articles cités demeurent la propriété de leurs éditeurs respectifs. Date de vérification des liens : mai 2026.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── Footer ────────────────────────────────────────────────── -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <a href="index.html" class="navbar__logo" style="display:inline-flex;margin-bottom:0.5rem;">
+          <div class="navbar__logo-icon">🧠</div>
+          <div class="navbar__logo-text">Sensibilisation à l'IA<span>Association loi 1901</span></div>
+        </a>
+        <p>Plateforme indépendante de veille, d'analyse et de sensibilisation aux enjeux de l'intelligence artificielle. Fondée à Nîmes en 2026.</p>
+        <div class="social-links" style="margin-top:1.25rem;">
+          <a href="https://www.linkedin.com/in/ihab-benmahrouz-27a991337/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn">💼</a>
+          <a href="https://github.com/IhabBenmahrouz" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub">⌨️</a>
+          <a href="https://www.instagram.com/ihabbenmahrouz/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">📷</a>
+          <a href="https://x.com/IhaBenmahrouz17" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Twitter/X">✖️</a>
+          <a href="https://www.facebook.com/profile.php?id=61589297452883" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Facebook">👥</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Thématiques</div>
+        <div class="footer__links">
+          <a href="etudes.html">Études &amp; Rapports</a>
+          <a href="bibliotheque.html">Bibliothèque IA</a>
+          <a href="sante-cerveau.html">Santé &amp; Cerveau</a>
+          <a href="environnement-datacenters.html">Environnement</a>
+          <a href="emploi-societe.html">Emploi &amp; Société</a>
+          <a href="robotique.html">Évolution Robotique</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Acteurs</div>
+        <div class="footer__links">
+          <a href="entreprises.html">Entreprises IA</a>
+          <a href="universites.html">Universités</a>
+          <a href="institutions.html">Gouvernements</a>
+          <a href="experts.html">Experts</a>
+          <a href="partenaires.html">Partenaires</a>
+          <a href="actualites.html">Actualités IA</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Ressources</div>
+        <div class="footer__links">
+          <a href="utilisation-responsable.html">Usage responsable</a>
+          <a href="sources.html">Bibliothèque de sources</a>
+          <a href="association.html">Notre association</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer__col-title">Contact</div>
+        <div class="footer__links">
+          <a href="contact.html">Formulaire de contact</a>
+          <a href="contact.html#partenariat">Partenariat</a>
+          <a href="contact.html#rejoindre">Adhésion</a>
+        </div>
+        <p style="font-size:0.8rem;color:var(--gray-600);margin-top:1rem;">
+          📍 Nîmes (30000), Gard<br>
+          📋 N° W302023332
+        </p>
+      </div>
+    </div>
+    <div class="footer__legal-row">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="politique-confidentialite.html">Politique de confidentialité</a>
+      <a href="politique-cookies.html">Politique cookies</a>
+      <button type="button" data-cookie-action="open-preferences">Gérer les cookies</button>
+      <a href="cgu.html">Conditions d'utilisation</a>
+      <a href="accessibilite.html">Accessibilité</a>
+    </div>
+    <div class="footer__bottom">
+      <p>© 2026 Association Sensibilisation à l'IA — Tous droits réservés · Loi du 1<sup>er</sup> juillet 1901</p>
+      <div class="footer__badges">
+        <span class="tag">RGPD conforme</span>
+        <span class="tag tag--green">Sources vérifiées</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── Retour en haut ─────────────────────────────────────────── -->
+<button class="back-to-top" id="backToTop" aria-label="Retour en haut">↑</button>
+
+<script src="js/script.js"></script>
+<script src="js/cookies.js"></script>
+<script src="js/enhancements.js"></script>
+</body>
+</html>
