@@ -40,3 +40,6 @@ _backup_html/
 *.php
 partials/
 _build.php
+
+# Sauvegardes locales de feuilles de styles
+*.backup.css
