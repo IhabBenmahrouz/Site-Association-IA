@@ -999,6 +999,13 @@ img[loading="lazy"].loaded, img[loading="lazy"]:not([src=""]) { opacity: 1; }
 .feature-hero__title em { color: var(--terra); font-style: italic; }
 .feature-hero__lead { font-size: 1.15rem; color: var(--ink-2); max-width: 560px; line-height: 1.7; }
 .feature-hero__tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1.5rem; }
+.feature-hero__meta {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 0.55rem 1.1rem;
+  margin-top: 1.85rem;
+  font-family: var(--font-ui); font-size: 0.8rem; color: var(--ink-3);
+}
+.feature-hero__meta-item { display: inline-flex; align-items: center; gap: 0.4rem; padding-right: 1.1rem; border-right: 1px solid var(--sand-2); }
+.feature-hero__meta-item:last-child { border-right: 0; padding-right: 0; }
 
 /* Carte « chiffre-clé » sur encre */
 .key-figure {
@@ -1019,6 +1026,8 @@ img[loading="lazy"].loaded, img[loading="lazy"]:not([src=""]) { opacity: 1; }
   font-size: clamp(3rem, 7vw, 4.4rem); font-weight: 700; line-height: 1; color: #fff;
 }
 .key-figure__value span { color: var(--terra); font-size: 0.5em; vertical-align: super; }
+.key-figure__gauge { position: relative; height: 6px; border-radius: 100px; background: rgba(255,255,255,0.14); margin-top: 1.25rem; overflow: hidden; }
+.key-figure__gauge span { position: absolute; left: 0; top: 0; bottom: 0; background: var(--terra); border-radius: 100px; }
 .key-figure__label { position: relative; font-size: 0.95rem; color: #E2DDD0; margin-top: 0.85rem; line-height: 1.5; }
 .key-figure__source {
   position: relative; font-family: var(--font-ui);
@@ -1036,6 +1045,18 @@ img[loading="lazy"].loaded, img[loading="lazy"]:not([src=""]) { opacity: 1; }
   border-left: 4px solid var(--terra);
 }
 .statement-band__text strong { color: var(--terra-deep); font-style: italic; font-weight: 600; }
+
+/* ── Bandeau de synthèse (résumé chiffré) ──────────────────── */
+.synthesis {
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 3.5rem;
+  background: var(--paper); border: 1px solid var(--sand);
+  border-radius: var(--radius-lg); overflow: hidden;
+}
+.synthesis__item { display: flex; align-items: baseline; gap: 0.85rem; padding: 1.6rem 1.85rem; border-left: 1px solid var(--sand); }
+.synthesis__item:first-child { border-left: 0; }
+.synthesis__num { font-family: var(--font-display); font-size: 2.5rem; font-weight: 700; color: var(--terra); line-height: 1; }
+.synthesis__label { font-family: var(--font-ui); font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-3); font-weight: 500; line-height: 1.4; }
 
 /* ── Index éditorial numéroté + intro collante ─────────────── */
 .index-layout { display: grid; grid-template-columns: 0.85fr 1.4fr; gap: 3.5rem; align-items: start; }
@@ -1076,6 +1097,11 @@ img[loading="lazy"].loaded, img[loading="lazy"]:not([src=""]) { opacity: 1; }
   .index-layout { grid-template-columns: 1fr; gap: 2rem; }
   .index-layout__aside { position: static; }
   .method-steps { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 700px) {
+  .synthesis { grid-template-columns: 1fr; }
+  .synthesis__item { border-left: 0; border-top: 1px solid var(--sand); padding: 1.25rem 1.5rem; }
+  .synthesis__item:first-child { border-top: 0; }
 }
 @media (max-width: 560px) {
   .method-steps { grid-template-columns: 1fr; }
