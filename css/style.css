@@ -954,6 +954,134 @@ select.form-control {
 img[loading="lazy"] { opacity: 0; transition: opacity 0.4s ease-out; }
 img[loading="lazy"].loaded, img[loading="lazy"]:not([src=""]) { opacity: 1; }
 
+/* ============================================================
+   PAGES À PRÉSENTATION DÉDIÉE — composants réutilisables
+   (chaque page peut redéfinir --terra via une classe de thème)
+   ============================================================ */
+
+/* Thème « Santé & Cerveau » — identité verte */
+.theme-sante {
+  --terra:      #1C8A6E;
+  --terra-deep: #136B54;
+  --terra-soft: #D8EFE6;
+}
+
+/* ── Hero éditorial asymétrique ────────────────────────────── */
+.feature-hero {
+  position: relative; overflow: hidden;
+  padding: 9rem 0 4rem;
+  background: var(--cream-2);
+  border-bottom: 1px solid var(--sand);
+}
+.feature-hero__bg { position: absolute; inset: 0; pointer-events: none; }
+.feature-hero__bg::after {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse 55% 75% at 100% 0%, var(--terra-soft), transparent 60%);
+}
+.feature-hero__bg::before {
+  content: ''; position: absolute; inset: 0;
+  background-image: radial-gradient(rgba(21,19,14,0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+  -webkit-mask-image: radial-gradient(ellipse 60% 70% at 82% 35%, #000 18%, transparent 70%);
+  mask-image: radial-gradient(ellipse 60% 70% at 82% 35%, #000 18%, transparent 70%);
+}
+.feature-hero__inner {
+  position: relative; z-index: 1;
+  display: grid; grid-template-columns: 1.55fr 1fr; gap: 3rem; align-items: end;
+}
+.feature-hero__title {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-weight: 600; line-height: 1.02; letter-spacing: -0.02em;
+  color: var(--ink); margin: 0.5rem 0 1.25rem;
+}
+.feature-hero__title em { color: var(--terra); font-style: italic; }
+.feature-hero__lead { font-size: 1.15rem; color: var(--ink-2); max-width: 560px; line-height: 1.7; }
+.feature-hero__tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1.5rem; }
+
+/* Carte « chiffre-clé » sur encre */
+.key-figure {
+  position: relative; overflow: hidden;
+  background: var(--ink); color: #F3EFE6;
+  border-radius: var(--radius-lg);
+  padding: 2.1rem 1.85rem;
+  box-shadow: var(--shadow-hover);
+}
+.key-figure::before {
+  content: ''; position: absolute; right: -34px; top: -34px;
+  width: 150px; height: 150px; border-radius: 50%;
+  background: var(--terra); opacity: 0.30; filter: blur(8px);
+}
+.key-figure__value {
+  position: relative;
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 7vw, 4.4rem); font-weight: 700; line-height: 1; color: #fff;
+}
+.key-figure__value span { color: var(--terra); font-size: 0.5em; vertical-align: super; }
+.key-figure__label { position: relative; font-size: 0.95rem; color: #E2DDD0; margin-top: 0.85rem; line-height: 1.5; }
+.key-figure__source {
+  position: relative; font-family: var(--font-ui);
+  font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.08em;
+  color: #A9A192; margin-top: 1.1rem;
+}
+
+/* ── Bandeau déclaration / pull-quote ──────────────────────── */
+.statement-band { background: var(--cream); padding: 3.75rem 0; }
+.statement-band__text {
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 3vw, 2.05rem);
+  line-height: 1.4; font-weight: 400; color: var(--ink);
+  max-width: 940px; padding-left: 1.5rem;
+  border-left: 4px solid var(--terra);
+}
+.statement-band__text strong { color: var(--terra-deep); font-style: italic; font-weight: 600; }
+
+/* ── Index éditorial numéroté + intro collante ─────────────── */
+.index-layout { display: grid; grid-template-columns: 0.85fr 1.4fr; gap: 3.5rem; align-items: start; }
+.index-layout__aside { position: sticky; top: 100px; }
+.index-list { display: flex; flex-direction: column; }
+.index-item {
+  display: grid; grid-template-columns: auto 1fr; gap: 1.5rem;
+  padding: 1.5rem 0; border-top: 1px solid var(--sand);
+}
+.index-item:last-child { border-bottom: 1px solid var(--sand); }
+.index-item__num {
+  font-family: var(--font-display); font-size: 1.6rem; font-weight: 600;
+  color: var(--terra); line-height: 1.1; min-width: 2.5rem;
+  transition: transform 0.3s ease;
+}
+.index-item:hover .index-item__num { transform: translateY(-3px); }
+.index-item__body h3 { font-family: var(--font-display); font-size: 1.22rem; font-weight: 600; color: var(--ink); margin-bottom: 0.45rem; }
+.index-item__body p { font-size: 0.95rem; color: var(--ink-2); line-height: 1.65; margin-bottom: 0.65rem; }
+
+/* ── Méthode : étapes numérotées ───────────────────────────── */
+.method-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+.method-step {
+  position: relative; background: var(--paper);
+  border: 1px solid var(--sand); border-radius: var(--radius-lg);
+  padding: 2.1rem 1.5rem 1.5rem; overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.method-step::before { content: ''; position: absolute; left: 0; top: 0; width: 42px; height: 3px; background: var(--terra); border-radius: 0 0 3px 0; }
+.method-step:hover { transform: translateY(-4px); border-color: var(--sand-2); box-shadow: var(--shadow-hover); }
+.method-step__num { display: block; font-family: var(--font-display); font-size: 2.75rem; font-weight: 700; color: var(--terra); opacity: 0.26; line-height: 1; }
+.method-step h3 { font-family: var(--font-display); font-size: 1.06rem; font-weight: 600; color: var(--ink); margin: 0.35rem 0 0.5rem; }
+.method-step p { font-size: 0.9rem; color: var(--ink-2); line-height: 1.6; }
+
+/* ── Responsive — pages dédiées ────────────────────────────── */
+@media (max-width: 900px) {
+  .feature-hero { padding: 8rem 0 3rem; }
+  .feature-hero__inner { grid-template-columns: 1fr; gap: 2rem; align-items: start; }
+  .index-layout { grid-template-columns: 1fr; gap: 2rem; }
+  .index-layout__aside { position: static; }
+  .method-steps { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .method-steps { grid-template-columns: 1fr; }
+  .index-item { grid-template-columns: 1fr; gap: 0.4rem; }
+}
+
 /* ── Responsive ────────────────────────────────────────────── */
 @media (max-width: 1100px) {
   .footer__top { grid-template-columns: 1fr 1fr; }

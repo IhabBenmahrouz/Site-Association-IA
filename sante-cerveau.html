@@ -28,7 +28,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
 </head>
-<body>
+<body class="theme-sante">
 
 <!-- ── Navigation ─────────────────────────────────────────── -->
 <nav class="navbar" id="navbar">
@@ -90,66 +90,156 @@
   <a href="contact.html"                  class="mobile-nav-link">✉️ Contact</a>
 </div>
 
-<section class="page-hero">
-  <div class="page-hero__bg"></div>
-  <div class="page-hero__content">
-    <div class="page-hero__breadcrumb"><a href="index.html">Accueil</a> <span>/</span> <span>Santé &amp; Cerveau</span></div>
-    <div class="section-eyebrow">Impacts humains</div>
-    <h1 class="page-hero__title">Santé, Psychologie &amp; <span style="color:var(--blue-bright)">Cerveau</span></h1>
-    <p class="page-hero__lead">L'intelligence artificielle influence notre façon de penser, d'apprendre et de mémoriser. Voici ce que la recherche nous dit sur ces effets — positifs et négatifs.</p>
+<!-- ── Hero éditorial asymétrique + chiffre-clé ──────────────── -->
+<section class="feature-hero">
+  <div class="feature-hero__bg"></div>
+  <div class="container feature-hero__inner">
+    <div class="feature-hero__main">
+      <div class="page-hero__breadcrumb"><a href="index.html">Accueil</a> <span>/</span> <span>Santé &amp; Cerveau</span></div>
+      <div class="section-eyebrow">Impacts humains</div>
+      <h1 class="feature-hero__title">Santé, psychologie<br>&amp; <em>cerveau</em></h1>
+      <p class="feature-hero__lead">L'intelligence artificielle influence notre façon de penser, d'apprendre et de mémoriser. Voici ce que la recherche nous dit sur ces effets — positifs comme négatifs.</p>
+      <div class="feature-hero__tags">
+        <span class="tag">Cognition</span>
+        <span class="tag tag--cyan">Mémoire</span>
+        <span class="tag tag--green">Apprentissage</span>
+      </div>
+    </div>
+    <aside class="key-figure reveal">
+      <div class="key-figure__value">−55<span>%</span></div>
+      <div class="key-figure__label">de connectivité cérébrale mesurée chez les usagers réguliers de modèles de langage (LLM).</div>
+      <div class="key-figure__source">Étude MIT Media Lab — « Your Brain on ChatGPT »</div>
+    </aside>
   </div>
 </section>
-<section class="section">
+
+<!-- ── Déclaration / pull-quote ──────────────────────────────── -->
+<section class="statement-band">
   <div class="container">
-    <div class="info-box" style="margin-bottom:2rem;">
-      <div class="info-box__icon">💡</div>
-      <div class="info-box__text"><strong>Message fondamental :</strong> L'IA peut aider à apprendre plus vite et à mieux organiser ses idées. Mais elle peut aussi rendre l'utilisateur passif s'il copie les réponses sans les comprendre. <strong>L'IA est un assistant, pas un cerveau de remplacement.</strong></div>
-    </div>
-    <div class="grid-3">
-      <div class="card reveal"><div class="card__icon" style="font-size:1.3rem;">🎯</div><h3 class="card__title">IA et concentration</h3><p class="card__text">L'accès immédiat aux réponses IA peut réduire notre tolérance à l'effort cognitif prolongé. Des études montrent une diminution du temps d'attention soutenue chez les utilisateurs intensifs.</p><div class="card__meta"><span class="tag tag--orange">⚠ Risque identifié</span></div></div>
-      <div class="card reveal reveal-delay-1"><div class="card__icon" style="font-size:1.3rem;">🧩</div><h3 class="card__title">IA et mémoire</h3><p class="card__text">Confier sa mémoire à l'IA (prises de notes automatiques, rappels) peut réduire l'effort de mémorisation active. Or la consolidation mémorielle nécessite précisément cet effort pour être durable.</p><div class="card__meta"><span class="tag tag--orange">⚠ Risque identifié</span></div></div>
-      <div class="card reveal reveal-delay-2"><div class="card__icon" style="font-size:1.3rem;">📚</div><h3 class="card__title">IA et apprentissage</h3><p class="card__text">Utilisée intelligemment, l'IA peut personnaliser l'apprentissage et expliquer des concepts complexes. Mal utilisée (copie directe), elle prive l'étudiant du processus cognitif qui fait l'apprentissage.</p><div class="card__meta"><span class="tag tag--green">✓ Potentiel positif</span></div></div>
-      <div class="card reveal"><div class="card__icon" style="font-size:1.3rem;">🔗</div><h3 class="card__title">Dépendance cognitive</h3><p class="card__text">Des chercheurs alertent sur une forme de dépendance cognitive aux IA génératives : délégation de la réflexion, difficulté à travailler sans assistant numérique, perte de l'autonomie intellectuelle.</p><div class="card__meta"><span class="tag tag--orange">⚠ Risque identifié</span></div></div>
-      <div class="card reveal reveal-delay-1"><div class="card__icon" style="font-size:1.3rem;">🤔</div><h3 class="card__title">IA et esprit critique</h3><p class="card__text">L'IA produit des réponses confiantes, même erronées (hallucinations). Un utilisateur non formé peut accepter ces réponses sans les questionner, ce qui érode progressivement son esprit critique.</p><div class="card__meta"><span class="tag tag--orange">⚠ Risque identifié</span></div></div>
-      <div class="card reveal reveal-delay-2"><div class="card__icon" style="font-size:1.3rem;">😰</div><h3 class="card__title">Anxiété et automatisation</h3><p class="card__text">La peur du remplacement par l'IA génère de l'anxiété chez de nombreux travailleurs. Des études montrent une augmentation du stress lié à l'incertitude professionnelle dans les secteurs exposés.</p><div class="card__meta"><span class="tag tag--orange">⚠ Risque identifié</span></div></div>
-      <div class="card reveal"><div class="card__icon" style="font-size:1.3rem;">🤝</div><h3 class="card__title">IA et isolement social</h3><p class="card__text">Interagir principalement avec des IA (chatbots, assistants) peut réduire les interactions humaines authentiques. Certains utilisateurs développent une préférence pour les échanges avec les IA, jugés moins stressants.</p><div class="card__meta"><span class="tag tag--orange">⚠ Risque identifié</span></div></div>
-      <div class="card reveal reveal-delay-1"><div class="card__icon" style="font-size:1.3rem;">🏥</div><h3 class="card__title">IA en santé mentale</h3><p class="card__text">Des applications IA de soutien psychologique émergent. Si elles peuvent pallier le manque de professionnels, elles ne remplacent pas une thérapie réelle et peuvent retarder une prise en charge appropriée.</p><div class="card__meta"><span class="tag tag--cyan">ℹ À surveiller</span></div></div>
-      <div class="card reveal reveal-delay-2"><div class="card__icon" style="font-size:1.3rem;">✅</div><h3 class="card__title">Confiance excessive</h3><p class="card__text">Les modèles IA génèrent des réponses avec un ton affirmatif même lorsqu'ils "hallucinent" — c'est-à-dire inventent des informations. L'utilisateur doit systématiquement vérifier les réponses sur des sujets importants.</p><div class="card__meta"><span class="tag tag--orange">⚠ Risque identifié</span></div></div>
-    </div>
+    <p class="statement-band__text">L'IA peut aider à apprendre plus vite et à mieux organiser ses idées. Mais elle peut aussi rendre l'utilisateur passif s'il copie les réponses sans les comprendre. <strong>L'IA est un assistant, pas un cerveau de remplacement.</strong></p>
   </div>
 </section>
+
+<!-- ── Les effets : index éditorial numéroté ─────────────────── -->
+<section class="section">
+  <div class="container index-layout">
+    <div class="index-layout__aside">
+      <div class="section-eyebrow">Ce que dit la recherche</div>
+      <h2 class="section-title">9 effets de l'IA<br>sur le <span>cerveau</span></h2>
+      <p class="section-lead">Chaque effet est documenté et nuancé : certains sont des risques avérés, d'autres des potentiels à encadrer.</p>
+    </div>
+    <ol class="index-list">
+      <li class="index-item reveal">
+        <span class="index-item__num">01</span>
+        <div class="index-item__body">
+          <h3>IA et concentration</h3>
+          <p>L'accès immédiat aux réponses IA peut réduire notre tolérance à l'effort cognitif prolongé. Des études montrent une diminution du temps d'attention soutenue chez les utilisateurs intensifs.</p>
+          <span class="tag tag--orange">⚠ Risque identifié</span>
+        </div>
+      </li>
+      <li class="index-item reveal">
+        <span class="index-item__num">02</span>
+        <div class="index-item__body">
+          <h3>IA et mémoire</h3>
+          <p>Confier sa mémoire à l'IA (prises de notes automatiques, rappels) peut réduire l'effort de mémorisation active. Or la consolidation mémorielle nécessite précisément cet effort pour être durable.</p>
+          <span class="tag tag--orange">⚠ Risque identifié</span>
+        </div>
+      </li>
+      <li class="index-item reveal">
+        <span class="index-item__num">03</span>
+        <div class="index-item__body">
+          <h3>IA et apprentissage</h3>
+          <p>Utilisée intelligemment, l'IA peut personnaliser l'apprentissage et expliquer des concepts complexes. Mal utilisée (copie directe), elle prive l'étudiant du processus cognitif qui fait l'apprentissage.</p>
+          <span class="tag tag--green">✓ Potentiel positif</span>
+        </div>
+      </li>
+      <li class="index-item reveal">
+        <span class="index-item__num">04</span>
+        <div class="index-item__body">
+          <h3>Dépendance cognitive</h3>
+          <p>Des chercheurs alertent sur une forme de dépendance cognitive aux IA génératives : délégation de la réflexion, difficulté à travailler sans assistant numérique, perte de l'autonomie intellectuelle.</p>
+          <span class="tag tag--orange">⚠ Risque identifié</span>
+        </div>
+      </li>
+      <li class="index-item reveal">
+        <span class="index-item__num">05</span>
+        <div class="index-item__body">
+          <h3>IA et esprit critique</h3>
+          <p>L'IA produit des réponses confiantes, même erronées (hallucinations). Un utilisateur non formé peut accepter ces réponses sans les questionner, ce qui érode progressivement son esprit critique.</p>
+          <span class="tag tag--orange">⚠ Risque identifié</span>
+        </div>
+      </li>
+      <li class="index-item reveal">
+        <span class="index-item__num">06</span>
+        <div class="index-item__body">
+          <h3>Anxiété et automatisation</h3>
+          <p>La peur du remplacement par l'IA génère de l'anxiété chez de nombreux travailleurs. Des études montrent une augmentation du stress lié à l'incertitude professionnelle dans les secteurs exposés.</p>
+          <span class="tag tag--orange">⚠ Risque identifié</span>
+        </div>
+      </li>
+      <li class="index-item reveal">
+        <span class="index-item__num">07</span>
+        <div class="index-item__body">
+          <h3>IA et isolement social</h3>
+          <p>Interagir principalement avec des IA (chatbots, assistants) peut réduire les interactions humaines authentiques. Certains utilisateurs développent une préférence pour les échanges avec les IA, jugés moins stressants.</p>
+          <span class="tag tag--orange">⚠ Risque identifié</span>
+        </div>
+      </li>
+      <li class="index-item reveal">
+        <span class="index-item__num">08</span>
+        <div class="index-item__body">
+          <h3>IA en santé mentale</h3>
+          <p>Des applications IA de soutien psychologique émergent. Si elles peuvent pallier le manque de professionnels, elles ne remplacent pas une thérapie réelle et peuvent retarder une prise en charge appropriée.</p>
+          <span class="tag tag--cyan">ℹ À surveiller</span>
+        </div>
+      </li>
+      <li class="index-item reveal">
+        <span class="index-item__num">09</span>
+        <div class="index-item__body">
+          <h3>Confiance excessive</h3>
+          <p>Les modèles IA génèrent des réponses avec un ton affirmatif même lorsqu'ils « hallucinent » — c'est-à-dire inventent des informations. L'utilisateur doit systématiquement vérifier les réponses sur des sujets importants.</p>
+          <span class="tag tag--orange">⚠ Risque identifié</span>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ── Méthode : préserver son esprit critique ───────────────── -->
 <section class="section section--alt">
   <div class="container">
     <div style="text-align:center;margin-bottom:2.5rem;" class="reveal">
       <div class="section-eyebrow" style="justify-content:center;">Conseils pratiques</div>
       <h2 class="section-title">Préserver son <span>esprit critique</span></h2>
+      <p class="section-lead" style="margin:0 auto;">Quatre réflexes simples pour faire de l'IA un allié de votre pensée, et non un substitut.</p>
     </div>
-    <div class="grid-2" style="max-width:900px;margin:0 auto;">
-      <div class="card reveal" style="border-color:rgba(0,200,232,0.2);">
-        <div style="font-size:1.5rem;margin-bottom:0.75rem;">✍️</div>
-        <h3 class="card__title">Reformuler avec ses propres mots</h3>
-        <p class="card__text">Ne jamais copier-coller une réponse IA. Relire, comprendre, reformuler dans son propre style. C'est cela qui crée un apprentissage réel.</p>
+    <div class="method-steps">
+      <div class="method-step reveal">
+        <span class="method-step__num">01</span>
+        <h3>Reformuler avec ses propres mots</h3>
+        <p>Ne jamais copier-coller une réponse IA. Relire, comprendre, reformuler dans son propre style. C'est cela qui crée un apprentissage réel.</p>
       </div>
-      <div class="card reveal reveal-delay-1" style="border-color:rgba(0,200,232,0.2);">
-        <div style="font-size:1.5rem;margin-bottom:0.75rem;">🔍</div>
-        <h3 class="card__title">Vérifier les sources</h3>
-        <p class="card__text">Tout fait important fourni par une IA doit être vérifié via une source primaire (institution, article scientifique, texte officiel).</p>
+      <div class="method-step reveal reveal-delay-1">
+        <span class="method-step__num">02</span>
+        <h3>Vérifier les sources</h3>
+        <p>Tout fait important fourni par une IA doit être vérifié via une source primaire (institution, article scientifique, texte officiel).</p>
       </div>
-      <div class="card reveal" style="border-color:rgba(0,200,232,0.2);">
-        <div style="font-size:1.5rem;margin-bottom:0.75rem;">⚖️</div>
-        <h3 class="card__title">Comparer plusieurs points de vue</h3>
-        <p class="card__text">Les modèles IA peuvent avoir des biais. Croiser les réponses avec d'autres sources — presse, bases académiques, avis d'experts — est indispensable.</p>
+      <div class="method-step reveal reveal-delay-2">
+        <span class="method-step__num">03</span>
+        <h3>Comparer plusieurs points de vue</h3>
+        <p>Les modèles IA peuvent avoir des biais. Croiser les réponses avec d'autres sources — presse, bases académiques, avis d'experts — est indispensable.</p>
       </div>
-      <div class="card reveal reveal-delay-1" style="border-color:rgba(0,200,232,0.2);">
-        <div style="font-size:1.5rem;margin-bottom:0.75rem;">🎯</div>
-        <h3 class="card__title">Utiliser l'IA pour apprendre, pas seulement produire</h3>
-        <p class="card__text">Demander à l'IA d'expliquer, de poser des questions, de proposer des exercices — plutôt que de simplement rédiger à votre place.</p>
+      <div class="method-step reveal reveal-delay-3">
+        <span class="method-step__num">04</span>
+        <h3>Apprendre, pas seulement produire</h3>
+        <p>Demander à l'IA d'expliquer, de poser des questions, de proposer des exercices — plutôt que de simplement rédiger à votre place.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section section--alt">
+<!-- ── Veille presse internationale ──────────────────────────── -->
+<section class="section">
   <div class="container">
     <div style="text-align:center;margin-bottom:2.5rem;" class="reveal">
       <div class="section-eyebrow" style="justify-content:center;">📰 Veille presse internationale</div>
@@ -186,7 +276,7 @@
         <div class="press-card__top"><span class="press-card__source">Futura Sciences</span><span class="press-card__country">🇫🇷 France</span></div>
         <div class="press-card__date">2025</div>
         <h3 class="press-card__title">Le choc des neuroscientifiques : ce qui arrive au cerveau après des mois avec ChatGPT</h3>
-        <p class="press-card__excerpt">Décryptage de l'étude MIT Media Lab "Your Brain on ChatGPT" : −55 % de connectivité cérébrale chez les usagers réguliers de LLM.</p>
+        <p class="press-card__excerpt">Décryptage de l'étude MIT Media Lab « Your Brain on ChatGPT » : −55 % de connectivité cérébrale chez les usagers réguliers de LLM.</p>
         <a class="press-card__link" href="https://www.futura-sciences.com/sante/actualites/cerveau-choc-neuroscientifiques-ce-arrive-cerveau-apres-mois-chatgpt-c7g3-128325/" target="_blank" rel="noopener noreferrer">Lire sur Futura Sciences →</a>
       </article>
 
@@ -223,7 +313,7 @@
       </article>
 
     </div>
-    <div style="text-align:center;margin-top:2rem;font-size:0.85rem;color:#8899BB;">
+    <div style="text-align:center;margin-top:2rem;font-size:0.85rem;color:var(--ink-3);">
       <p>Liens vérifiés en mai 2026. Les articles demeurent la propriété de leurs éditeurs respectifs.</p>
     </div>
   </div>
