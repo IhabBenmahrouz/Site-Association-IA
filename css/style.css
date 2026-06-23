@@ -1,31 +1,32 @@
 /* ============================================================
    SENSIBILISATION À L'IA — Feuille de styles principale
-   Direction : « Indigo & Bone » · néo-éditorial contrasté
-   Palette : papier galerie · encre · indigo électrique · forêt · sable
-   Titres serif (Fraunces) · UI grotesque (Space Grotesk) · texte DM Sans
+   Direction artistique : Ihab — éditorial / magazine
+   Palette : blanc cassé chaud · noir encre · accent CORAIL unique
+   Titres serif (Fraunces) · texte sans neutre (Inter)
+   Règle : un seul accent (corail). Sobriété, espaces généreux.
    ============================================================ */
 
 /* ── Import Polices ────────────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Inter:wght@400;500;600;700&display=swap');
 
 /* ── Variables CSS ─────────────────────────────────────────── */
 :root {
-  /* Palette « Indigo & Bone » */
-  --cream:      #ECE9E1;   /* fond de page (papier galerie) */
-  --cream-2:    #E2DED2;   /* sections alternées */
-  --paper:      #FBFAF6;   /* cartes / surfaces nettes */
-  --ink:        #15130E;   /* texte principal (encre quasi noire) */
-  --ink-2:      #423C32;   /* texte secondaire */
-  --ink-3:      #6E6658;   /* texte atténué */
-  --terra:      #3B2BE8;   /* ACCENT principal — indigo électrique */
-  --terra-deep: #271BB0;   /* accent foncé (liens / hover) */
-  --terra-soft: #E6E3FB;   /* teinte indigo très claire */
-  --teal:       #1C6B5E;   /* accent secondaire — forêt */
-  --teal-deep:  #134F45;
-  --teal-soft:  #DCE8E2;
-  --gold:       #B07D2B;   /* touche dorée (badges, détails) */
-  --sand:       #DDD9CC;   /* bordures / filets */
-  --sand-2:     #CBC5B2;   /* bordures appuyées */
+  /* Palette signature Ihab — éditorial, accent corail unique */
+  --cream:      #FAF8F5;   /* fond principal — blanc cassé chaud */
+  --cream-2:    #F2EEE8;   /* sections alternées */
+  --paper:      #FFFFFF;   /* cartes / surfaces nettes */
+  --ink:        #1A1A1A;   /* texte principal — noir encre */
+  --ink-2:      #4A4A4A;   /* texte secondaire */
+  --ink-3:      #6B6B6B;   /* gris ardoise — texte atténué */
+  --terra:      #FF5A3C;   /* ACCENT SIGNATURE — corail (unique) */
+  --terra-deep: #E03E22;   /* corail profond — survol / liens */
+  --terra-soft: #FFE7E0;   /* corail très clair — fonds discrets */
+  --teal:       #1A1A1A;   /* « secondaire » ramené à l'encre (mono-accent) */
+  --teal-deep:  #111111;
+  --teal-soft:  #EFEAE3;
+  --gold:       #8A6A2B;   /* détail rare (badges) */
+  --sand:       #E8E4DE;   /* lignes / séparateurs */
+  --sand-2:     #D8D2C8;   /* bordures appuyées */
 
   /* ── Compat : anciens tokens remappés (utilisés en inline) ── */
   --white:       var(--ink);     /* texte « clair sur sombre » -> encre */
@@ -35,37 +36,37 @@
   --gray-100:    var(--cream-2);
   --gray-200:    var(--sand);
   --gray-400:    var(--ink-3);
-  --gray-500:    #7D7163;
-  --gray-600:    #8A7E6E;
+  --gray-500:    #6B6B6B;
+  --gray-600:    #6B6B6B;
   --gray-700:    var(--ink-2);
-  --gray-800:    #2C251E;
+  --gray-800:    #2A2A2A;
   --blue:        var(--terra);
   --blue-bright: var(--terra-deep);
   --electric:    var(--terra-deep);
-  --cyan:        var(--teal);
-  --violet:      var(--teal);
-  --violet-light:var(--teal-soft);
+  --cyan:        var(--terra);   /* tout accent inline -> corail unique */
+  --violet:      var(--terra);
+  --violet-light:var(--terra-soft);
 
-  /* Typographie */
+  /* Typographie — serif éditoriale + sans neutre */
   --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
-  --font-body:    'DM Sans', system-ui, sans-serif;
-  --font-ui:      'Space Grotesk', 'DM Sans', system-ui, sans-serif;
+  --font-body:    'Inter', system-ui, -apple-system, sans-serif;
+  --font-ui:      'Inter', system-ui, -apple-system, sans-serif;
 
-  /* Espacements */
-  --section-py: 6rem;
+  /* Espacements — grille aérée */
+  --section-py: 6.5rem;
   --container:  1180px;
-  --radius:     6px;       /* coins nets, éditoriaux */
-  --radius-lg:  12px;
+  --radius:     4px;       /* coins discrets, éditoriaux */
+  --radius-lg:  8px;
 
-  /* Ombres (encre froide, diffuses) */
-  --shadow-sm:    0 1px 2px rgba(21,19,14,0.05), 0 2px 6px rgba(21,19,14,0.04);
-  --shadow-md:    0 10px 30px rgba(21,19,14,0.10);
-  --shadow-card:  0 2px 14px rgba(21,19,14,0.05);
-  --shadow-hover: 0 18px 44px rgba(39,27,176,0.16);
-  --glow-blue:    0 10px 34px rgba(59,43,232,0.26);
+  /* Ombres — douces, neutres (sobriété) */
+  --shadow-sm:    0 1px 2px rgba(26,26,26,0.04), 0 2px 6px rgba(26,26,26,0.04);
+  --shadow-md:    0 8px 24px rgba(26,26,26,0.08);
+  --shadow-card:  0 1px 3px rgba(26,26,26,0.05);
+  --shadow-hover: 0 12px 32px rgba(26,26,26,0.11);
+  --glow-blue:    0 8px 24px rgba(255,90,60,0.22);
 
-  /* Transitions */
-  --transition: 0.3s cubic-bezier(0.4,0,0.2,1);
+  /* Transitions — fluides, jamais brusques */
+  --transition: 0.25s ease;
 }
 
 /* ── Reset & Base ──────────────────────────────────────────── */
@@ -120,9 +121,9 @@ input, textarea, select { font-family: inherit; font-size: 1rem; border: none; o
   text-transform: uppercase;
   background: var(--terra-soft);
   color: var(--terra-deep);
-  border: 1px solid rgba(59,43,232,0.22);
+  border: 1px solid rgba(255,90,60,0.22);
 }
-.tag--cyan   { background: var(--teal-soft); color: var(--teal-deep); border-color: rgba(28,107,94,0.25); }
+.tag--cyan   { background: var(--teal-soft); color: var(--teal-deep); border-color: rgba(26,26,26,0.25); }
 .tag--violet { background: #ECE6DA; color: var(--gold); border-color: rgba(176,125,43,0.28); }
 .tag--green  { background: #E2EEDC; color: #3F7D34; border-color: rgba(63,125,52,0.25); }
 .tag--orange { background: #F6E4CF; color: #B5641F; border-color: rgba(181,100,31,0.25); }
@@ -195,8 +196,8 @@ input, textarea, select { font-family: inherit; font-size: 1rem; border: none; o
 .btn--outline { background: transparent; color: var(--ink); border: 1.5px solid var(--sand-2); }
 .btn--outline:hover { border-color: var(--terra); color: var(--terra-deep); background: var(--terra-soft); }
 
-.btn--ghost { background: var(--terra-soft); color: var(--terra-deep); border: 1px solid rgba(59,43,232,0.2); }
-.btn--ghost:hover { background: #D9D4F7; }
+.btn--ghost { background: var(--terra-soft); color: var(--terra-deep); border: 1px solid rgba(255,90,60,0.2); }
+.btn--ghost:hover { background: #FFD9CF; }
 
 .btn--sm { padding: 0.5rem 1.05rem; font-size: 0.83rem; }
 
@@ -243,7 +244,7 @@ input, textarea, select { font-family: inherit; font-size: 1rem; border: none; o
   width: 50px; height: 50px;
   border-radius: 12px;
   background: var(--terra-soft);
-  border: 1px solid rgba(59,43,232,0.18);
+  border: 1px solid rgba(255,90,60,0.18);
   display: flex; align-items: center; justify-content: center;
   font-size: 1.35rem;
   margin-bottom: 1.25rem;
@@ -290,7 +291,7 @@ input, textarea, select { font-family: inherit; font-size: 1rem; border: none; o
   border-radius: 9px;
   display: flex; align-items: center; justify-content: center;
   font-size: 1.15rem;
-  box-shadow: 0 4px 14px rgba(59,43,232,0.35);
+  box-shadow: 0 4px 14px rgba(255,90,60,0.35);
   transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1);
 }
 .navbar__logo:hover .navbar__logo-icon { transform: rotate(-10deg) scale(1.08); }
@@ -414,12 +415,12 @@ input, textarea, select { font-family: inherit; font-size: 1rem; border: none; o
 .hero__bg { position: absolute; inset: 0; pointer-events: none; }
 .hero__gradient {
   position: absolute; width: 760px; height: 760px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(59,43,232,0.10) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255,90,60,0.10) 0%, transparent 70%);
   top: -240px; right: -180px;
 }
 .hero__gradient-2 {
   position: absolute; width: 520px; height: 520px; border-radius: 50%;
-  background: radial-gradient(circle, rgba(28,107,94,0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(26,26,26,0.08) 0%, transparent 70%);
   bottom: -120px; left: 4%;
 }
 .hero__grid {
@@ -499,7 +500,7 @@ input, textarea, select { font-family: inherit; font-size: 1rem; border: none; o
 }
 .page-hero__bg {
   position: absolute; inset: 0; pointer-events: none;
-  background: radial-gradient(ellipse 50% 80% at 85% 0%, rgba(59,43,232,0.08), transparent 70%);
+  background: radial-gradient(ellipse 50% 80% at 85% 0%, rgba(255,90,60,0.08), transparent 70%);
 }
 .page-hero__content { position: relative; z-index: 1; max-width: var(--container); margin: 0 auto; }
 .page-hero__breadcrumb {
@@ -537,7 +538,7 @@ input, textarea, select { font-family: inherit; font-size: 1rem; border: none; o
   border-radius: 12px; padding: 0.75rem 1.25rem; margin-bottom: 2rem;
   transition: var(--transition);
 }
-.search-bar:focus-within { border-color: var(--terra); box-shadow: 0 0 0 3px rgba(59,43,232,0.12); }
+.search-bar:focus-within { border-color: var(--terra); box-shadow: 0 0 0 3px rgba(255,90,60,0.12); }
 .search-bar input { flex: 1; background: transparent; color: var(--ink); font-size: 0.95rem; }
 .search-bar input::placeholder { color: var(--ink-3); }
 .search-bar svg { color: var(--ink-3); flex-shrink: 0; }
@@ -600,7 +601,7 @@ input, textarea, select { font-family: inherit; font-size: 1rem; border: none; o
   border-radius: 10px; padding: 0.8rem 1rem; color: var(--ink); font-size: 0.95rem;
   transition: var(--transition);
 }
-.form-control:focus { border-color: var(--terra); box-shadow: 0 0 0 3px rgba(59,43,232,0.12); }
+.form-control:focus { border-color: var(--terra); box-shadow: 0 0 0 3px rgba(255,90,60,0.12); }
 .form-control::placeholder { color: var(--ink-3); }
 textarea.form-control { resize: vertical; min-height: 140px; }
 select.form-control {
@@ -620,7 +621,7 @@ select.form-control {
   outline: none; width: 100%; box-sizing: border-box;
   transition: border-color var(--transition), box-shadow var(--transition);
 }
-.form-input:focus { border-color: var(--terra); box-shadow: 0 0 0 3px rgba(59,43,232,0.12); }
+.form-input:focus { border-color: var(--terra); box-shadow: 0 0 0 3px rgba(255,90,60,0.12); }
 .form-input.is-invalid { border-color: #d6492c; }
 .form-input.is-valid { border-color: #3f7d34; }
 .form-select {
@@ -639,7 +640,7 @@ select.form-control {
 /* ── Info / Alerte box ─────────────────────────────────────── */
 .info-box {
   background: var(--terra-soft);
-  border: 1px solid rgba(59,43,232,0.2);
+  border: 1px solid rgba(255,90,60,0.2);
   border-left: 4px solid var(--terra);
   border-radius: 12px; padding: 1.25rem 1.5rem;
   display: flex; gap: 1rem; align-items: flex-start;
@@ -820,7 +821,7 @@ select.form-control {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C9532A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.3-4.3'/%3E%3C/svg%3E");
   background-repeat: no-repeat; background-position: 1rem center; background-size: 1.1rem;
 }
-.book-search:focus { border-color: var(--terra); background-color: var(--paper); box-shadow: 0 0 0 4px rgba(59,43,232,0.12); outline: none; }
+.book-search:focus { border-color: var(--terra); background-color: var(--paper); box-shadow: 0 0 0 4px rgba(255,90,60,0.12); outline: none; }
 .book-search::placeholder { color: var(--ink-3); }
 
 /* ── Partenaires — cartes ──────────────────────────────────── */
@@ -869,7 +870,7 @@ select.form-control {
 .legal-toc strong { display: block; margin-bottom: 0.5rem; color: var(--terra-deep); font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
 .legal-toc ol { list-style: decimal; padding-left: 1.5rem; }
 .legal-toc li { margin-bottom: 0.3rem; }
-.legal-callout { background: var(--teal-soft); border: 1px solid rgba(28,107,94,0.22); border-left: 4px solid var(--teal); border-radius: 10px; padding: 1rem 1.25rem; margin: 1.25rem 0; }
+.legal-callout { background: var(--teal-soft); border: 1px solid rgba(26,26,26,0.22); border-left: 4px solid var(--teal); border-radius: 10px; padding: 1rem 1.25rem; margin: 1.25rem 0; }
 .legal-callout p:last-child { margin-bottom: 0; }
 
 /* ── Cookie consent — bannière ─────────────────────────────── */
@@ -956,15 +957,9 @@ img[loading="lazy"].loaded, img[loading="lazy"]:not([src=""]) { opacity: 1; }
 
 /* ============================================================
    PAGES À PRÉSENTATION DÉDIÉE — composants réutilisables
-   (chaque page peut redéfinir --terra via une classe de thème)
+   Chaque page garde un AGENCEMENT propre, mais le même accent
+   corail unique (règle mono-accent de la direction artistique).
    ============================================================ */
-
-/* Thème « Santé & Cerveau » — identité verte */
-.theme-sante {
-  --terra:      #1C8A6E;
-  --terra-deep: #136B54;
-  --terra-soft: #D8EFE6;
-}
 
 /* ── Hero éditorial asymétrique ────────────────────────────── */
 .feature-hero {
